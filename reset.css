@@ -1,56 +1,326 @@
-/* Derived from: https://github.com/elad2412/the-new-css-reset */
+body {
 
-/* Remove all the styles of the “User-Agent-Stylesheet” except for the `display` property. */
-*:where(:not(html, svg *, symbol *)) {
-	all: unset;
-	display: revert;
+font-family: "Inter" , sans-serif;
+
+margin-left: 3rem;
+margin-right: 3rem;
+
+background-color:#7b7b7b;
+
 }
 
-/* Preferred box-sizing value. */
-*, *::before, *::after { box-sizing: border-box }
 
-/* Fix mobile Safari increase font-size on landscape mode. */
-html {
-	-moz-text-size-adjust: none;
-	-webkit-text-size-adjust: none;
-	text-size-adjust: none;
+
+main{
+
+
+
+
 }
 
-/* Reapply the pointer cursor for anchor tags. */
-a, button, summary { cursor: revert }
+header{
+margin-bottom:16rem;
+margin-top:3rem;
 
-/* Remove list styles (bullets/numbers). */
-ol, ul, menu, summary { list-style: none }
-
-/* For images to not be able to exceed their container. */
-img {
-	max-block-size: 100%;
-	max-inline-size: 100%;
+}
+ul{
+	margin:.1rem;
+	text-align:right;
+	list-style:none;
 }
 
-/* Remove spacing between cells in tables. */
-table { border-collapse: collapse }
 
-/* Safari issue when using text input. */
-input, textarea { -webkit-user-select: auto }
+ul > a {
+	background-color:transparent;
 
-/* Revert for textarea elements on Safari. */
-textarea { white-space: revert }
 
-/* Minimum style to allow to style meter element. */
-meter { appearance: revert }
+}
 
-/* Default text opacity of input placeholder. */
-::placeholder { color: unset }
 
-/* Nix user-agent overlay colors. */
-::backdrop { background: unset }
+.author{
 
-/* Fix the feature of 'hidden' attribute. */
-:where([hidden]) { display: none }
+	bakcground-color:none;
 
-/* Restore draggable feature. */
-:where([draggable='true']) { -webkit-user-drag: element }
 
-/* Remove details/summary styles. */
-::-webkit-details-marker { display: none }
+}
+
+
+header > h1 {
+	text-align: right;
+	font-family: "EB Garamond", serif;
+	font-weight: 400;
+	margin: 0rem ;
+
+
+
+
+}
+
+header> ul > li {
+	font-family: "IBM Plex Mono";
+	font-weight:500;
+
+
+}
+
+header > ul > li:nth-child(2) {
+	color:rgb(45, 44, 44);
+	font-weight:400;
+
+
+
+}
+
+.section-one{
+
+
+
+
+
+}
+
+
+p{
+	font-family:"Inter",serif;
+	font-size: 1rem;
+	line-height:1.6rem;
+	padding-left:5rem;
+	padding-right:5rem;
+
+
+
+
+
+}
+
+
+
+
+
+a{
+	background-color:#F66732;
+	padding-left:.4rem;
+	padding-right:.4rem;
+	padding-top:.1rem;
+	padding-bottom:.1rem;
+
+
+
+
+
+}
+
+
+a[href^='https://'] {
+
+	color: #E0E208;
+	font-family: "IBM Plex Mono", sans-serif;
+
+
+
+
+
+
+
+}
+
+em > span{
+
+
+
+	font-size:12rem;
+	font-family:"Pirata One";
+	letter-spacing: -.4rem
+
+
+
+}
+
+mark{
+
+	background-color:#00f;
+	color:white;
+	padding-left:.4rem;
+	padding-right:.4rem;
+	padding-top:.1rem;
+	padding-bottom:.1rem;
+
+
+}
+
+
+
+
+h3 >  em{
+
+	font-family: "EB Garamond" , serif;
+
+	line-height:1.4rem;
+
+	font-weight: 100;
+	font-style:normal;
+	color: white;
+	margin-bottom:.3rem;
+
+	color:black;
+
+}
+
+
+
+#original-article{
+
+
+
+
+}
+
+h3{
+	font-family: "Eb Garamond";
+	font-size: 2.34rem;
+	font-style: normal;
+	font--weight: 200;
+	line-height: 2.5rem;
+	margin-top:4rem;
+
+
+
+}
+
+h2{
+	background-color: #00f;
+	color: white;
+	font-size: 1.1rem;
+	padding:.4rem;
+	display:inline-block;
+	margin-bottom:4rem;
+	margin-top:4rem;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+blockquote{
+
+	margin-top: 5rem;
+	margin-bottom:5rem;
+	padding-left: 4rem;
+	padding-right:4rem;
+
+}
+
+
+blockquote > h3 {
+	margin-top:3rem;
+	color:#00f;
+	font-weight:100;
+	font-style:italic;
+
+
+
+
+}
+
+
+blockquote > cite {
+	margin-bottom:2rem;
+	border: .02rem solid;
+	border-color:#00f;
+	padding-left:.3rem;
+	padding-right: 0.6rem;
+	padding-top:.6rem;
+	padding-bottom:.3rem;
+	color:#00f;
+
+
+}
+
+
+
+aside{
+padding-left:5rem;
+	padding-right:5rem;
+
+}
+
+aside > strong{
+
+
+}
+
+aside > em{
+	padding-left:.4rem;
+	padding-right:.4rem;
+	padding-top:.1rem;
+	padding-bottom:.1rem;
+	background-color:rgb(231, 141, 186);
+	color:#abf57f;
+	font-family:" Eb Garamond";
+	font-style:normal;
+
+}
+
+aside > a{
+
+
+
+}
+
+p > strong{
+
+
+
+
+
+
+
+}
+sup{
+	background-color: #F66732;
+	padding-left:.4rem;
+	padding-right:.4rem;
+	padding-top:.1rem;
+	padding-bottom:.1rem;
+	color: #E0E208
+
+
+
+}
+
+
+
+
+
+
+sup > a[href^='#']{
+
+	color: #E0E208;
+
+
+}
+
+
+.vocab{
+
+	background-color:#A9EA84;
+	color:#925A2F;
+	font-family: "IBM Plex Mono";
+	font-weight:400;
+	padding-left:.4rem;
+	padding-right:.4rem;
+	padding-top:.1rem;
+	padding-bottom:.1rem;
+
+
+
+}
