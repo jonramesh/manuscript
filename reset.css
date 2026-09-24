@@ -2,8 +2,7 @@ body {
 
 font-family: "Inter" , sans-serif;
 
-margin-left: 3rem;
-margin-right: 3rem;
+
 
 background-color:#7b7b7b;
 
@@ -19,12 +18,11 @@ main{
 }
 
 header{
-margin-bottom:16rem;
-margin-top:3rem;
+
 
 }
 ul{
-	margin:.1rem;
+
 	text-align:right;
 	list-style:none;
 }
@@ -32,14 +30,21 @@ ul{
 
 ul > a {
 	background-color:transparent;
+	text-align: right;
+
 
 
 }
 
 
+
+
+
+
 .author{
 
-	bakcground-color:none;
+	background-color:transparent;
+	text-decoration: none;
 
 
 }
@@ -49,7 +54,7 @@ header > h1 {
 	text-align: right;
 	font-family: "EB Garamond", serif;
 	font-weight: 400;
-	margin: 0rem ;
+
 
 
 
@@ -59,6 +64,7 @@ header > h1 {
 header> ul > li {
 	font-family: "IBM Plex Mono";
 	font-weight:500;
+	background-color: transparet;
 
 
 }
@@ -71,6 +77,13 @@ header > ul > li:nth-child(2) {
 
 }
 
+ul > li > a:visited {
+
+	color:black;
+
+
+
+}
 .section-one{
 
 
@@ -84,8 +97,7 @@ p{
 	font-family:"Inter",serif;
 	font-size: 1rem;
 	line-height:1.6rem;
-	padding-left:5rem;
-	padding-right:5rem;
+
 
 
 
@@ -99,10 +111,6 @@ p{
 
 a{
 	background-color:#F66732;
-	padding-left:.4rem;
-	padding-right:.4rem;
-	padding-top:.1rem;
-	padding-bottom:.1rem;
 
 
 
@@ -128,7 +136,7 @@ em > span{
 
 
 
-	font-size:12rem;
+	font-size:5rem;
 	font-family:"Pirata One";
 	letter-spacing: -.4rem
 
@@ -140,10 +148,7 @@ mark{
 
 	background-color:#00f;
 	color:white;
-	padding-left:.4rem;
-	padding-right:.4rem;
-	padding-top:.1rem;
-	padding-bottom:.1rem;
+
 
 
 }
@@ -160,9 +165,26 @@ h3 >  em{
 	font-weight: 100;
 	font-style:normal;
 	color: white;
-	margin-bottom:.3rem;
+
 
 	color:black;
+
+}
+
+h3 > pre {
+
+
+
+		font-family: "EB Garamond" , serif;
+
+	line-height:1.4rem;
+
+	font-weight: 100;
+	font-style:normal;
+
+
+
+
 
 }
 
@@ -179,23 +201,51 @@ h3{
 	font-family: "Eb Garamond";
 	font-size: 2.34rem;
 	font-style: normal;
-	font--weight: 200;
+	font-weight: 200;
 	line-height: 2.5rem;
-	margin-top:4rem;
 
 
 
 }
 
 h2{
-	background-color: #00f;
+
 	color: white;
 	font-size: 1.1rem;
-	padding:.4rem;
-	display:inline-block;
-	margin-bottom:4rem;
-	margin-top:4rem;
 
+
+
+
+
+}
+
+#heading-intro{
+
+
+
+
+}
+
+h2 > span{
+
+	background-color: #00f;
+
+
+
+}
+
+pre > span{
+	font-family: "EB Garamond" , serif;
+
+	line-height:1.4rem;
+
+	font-weight: 100;
+	font-style:normal;
+	text-align:left;
+
+
+	background-color:#E0E208;
+	color:#F66732;
 
 }
 
@@ -212,19 +262,20 @@ h2{
 
 blockquote{
 
-	margin-top: 5rem;
-	margin-bottom:5rem;
-	padding-left: 4rem;
-	padding-right:4rem;
+
 
 }
 
 
 blockquote > h3 {
-	margin-top:3rem;
-	color:#00f;
+
+	color:white;
 	font-weight:100;
 	font-style:italic;
+	text-align: center;
+	line-height: 3.2rem;
+
+
 
 
 
@@ -233,23 +284,34 @@ blockquote > h3 {
 
 
 blockquote > cite {
-	margin-bottom:2rem;
-	border: .02rem solid;
-	border-color:#00f;
-	padding-left:.3rem;
-	padding-right: 0.6rem;
-	padding-top:.6rem;
-	padding-bottom:.3rem;
+
+	background-color: white;
+
 	color:#00f;
+	font-weight:bold;
 
 
 }
 
+cite {
+	font-size:.9rem;
+	font-style:normal;
+
+
+
+}
+
+cite > em{
+
+	font-family: "EB Garamond";
+	font-weight:400;
+	font-size:1.1rem;
+
+}
 
 
 aside{
-padding-left:5rem;
-	padding-right:5rem;
+
 
 }
 
@@ -259,10 +321,7 @@ aside > strong{
 }
 
 aside > em{
-	padding-left:.4rem;
-	padding-right:.4rem;
-	padding-top:.1rem;
-	padding-bottom:.1rem;
+
 	background-color:rgb(231, 141, 186);
 	color:#abf57f;
 	font-family:" Eb Garamond";
@@ -287,10 +346,7 @@ p > strong{
 }
 sup{
 	background-color: #F66732;
-	padding-left:.4rem;
-	padding-right:.4rem;
-	padding-top:.1rem;
-	padding-bottom:.1rem;
+
 	color: #E0E208
 
 
@@ -316,10 +372,6 @@ sup > a[href^='#']{
 	color:#925A2F;
 	font-family: "IBM Plex Mono";
 	font-weight:400;
-	padding-left:.4rem;
-	padding-right:.4rem;
-	padding-top:.1rem;
-	padding-bottom:.1rem;
 
 
 
