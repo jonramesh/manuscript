@@ -3,7 +3,7 @@
 
 
 
---base-unit: 4px;
+--base-unit: 1rem;
 
 
 
@@ -13,7 +13,7 @@
 
 
 
---main-color:#0000FF;
+--color-main:#0000FF;
 
 --color-page-background:#FFFFFF;
 
@@ -27,12 +27,16 @@
 
 /*type size system*/
 
---text-heading-title:4.5rem ;
---text-article-body-paragraph: 1rem;
---text--article-body--lead:4.5rem;
+--text-heading-title:2.5rem ;
+--text-article-body-paragraph: 1.25rem;
+--text--article-body--lead:2.5rem;
 --text-article-body-pullquote:4.5;
---text-heading-one: 1.75rem;
+--text-heading-one: 1.5rem;
 
+--text-quoteblock-quote:2.5rem;
+
+
+/* line height calculations */
 
 
 
@@ -42,3 +46,172 @@
 
 
 }
+
+/* The body element where all the amin styles are captured.   */
+body{
+
+	background-color: var(--color-page-background);
+	font-size:var(--text-article-body-paragraph);
+	line-height:1.75rem;
+	padding-inline:3.75rem;
+	padding-block-start:3.5lh;
+
+
+
+}
+
+
+
+
+
+
+/* HEADER */
+header{
+
+
+
+
+	margin-block-end: 3lh;
+	text-align: right;
+
+
+
+}
+
+header > h1 {
+
+	font-size: var(--text-heading-title);
+	line-height:2.75rem;
+	margin-block-end:.5lh
+
+
+
+
+}
+
+
+
+header > ul {
+
+	--text-header-subtext:1rem;
+	font-size:var(--text-header-subtext);
+
+
+}
+
+
+
+
+header > ul > li  {
+
+	list-style:none;
+
+
+
+
+}
+
+
+header >ul >li > time {
+
+
+
+
+}
+
+
+
+
+
+
+
+/* article body */
+
+/*article body intro */
+
+article{
+
+	margin-block-end:4lh;
+
+}
+
+
+article > section > h2 {
+
+font-size:var(--text-heading-one);
+margin-block-end:2.25lh;
+background-color: var(--color-main);
+display:inline-block;
+color:white;
+
+}
+
+article > section{
+
+	margin-block-end:1.5lh;
+
+
+}
+
+article > section> h3{
+
+margin-block-end:1.5lh;
+font-size:var(--text--article-body--lead);
+line-height:2.5rem;
+
+}
+
+
+
+ #start{
+
+	float:left;
+	background-color:var(--color-main);
+	height:200px;
+	width:200px;
+	color:white;
+	font-size: 100px;
+	text-align:center;
+	line-height:200px;
+
+
+}
+
+
+article > section > p{
+
+margin-block-end:1.5lh;
+
+}
+
+
+/* article-body-asside*/
+
+blockquote{
+
+	text-align:center;
+
+
+
+
+
+}
+
+blockquote > p{
+
+font-size: 2.5rem;
+
+
+}
+
+/*blockquote */
+
+
+
+
+
+
+
+
+
+
