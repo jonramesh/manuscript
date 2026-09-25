@@ -1,0 +1,766 @@
+body {
+
+font-family: "Inter" , sans-serif;
+
+
+
+background-color:#7b7b7b;
+
+}
+
+
+
+main{
+
+
+
+
+}
+
+header{
+
+
+}
+ul{
+
+	text-align:right;
+	list-style:none;
+}
+
+
+ul > a {
+	background-color:transparent;
+	text-align: right;
+
+
+
+}
+
+
+
+
+
+
+.author{
+
+	background-color:transparent;
+	text-decoration: none;
+
+
+}
+
+
+header > h1 {
+	text-align: right;
+	font-family: "EB Garamond", serif;
+	font-weight: 400;
+
+
+
+
+
+}
+
+header> ul > li {
+	font-family: "IBM Plex Mono";
+	font-weight:500;
+	background-color: transparet;
+
+
+}
+
+header > ul > li:nth-child(2) {
+	color:rgb(45, 44, 44);
+	font-weight:400;
+
+
+
+}
+
+ul > li > a:visited {
+
+	color:black;
+
+
+
+}
+.section-one{
+
+
+
+
+
+}
+
+
+p{
+	font-family:"Inter",serif;
+	font-size: 1rem;
+	line-height:1.6rem;
+
+
+
+
+
+
+}
+
+
+
+
+
+a{
+	background-color:#F66732;
+
+
+
+
+
+}
+
+
+a[href^='https://'] {
+
+	color: #E0E208;
+	font-family: "IBM Plex Mono", sans-serif;
+
+
+
+
+
+
+
+}
+
+em > span{
+
+
+
+	font-size:5rem;
+	font-family:"Pirata One";
+	letter-spacing: -.4rem
+
+
+
+}
+
+mark{
+
+	background-color:#00f;
+	color:white;
+
+
+
+}
+
+
+
+
+h3 >  em{
+
+	font-family: "EB Garamond" , serif;
+
+	line-height:1.4rem;
+
+	font-weight: 100;
+	font-style:normal;
+	color: white;
+
+
+	color:black;
+
+}
+
+h3 > pre {
+
+
+
+		font-family: "EB Garamond" , serif;
+
+	line-height:1.4rem;
+
+	font-weight: 100;
+	font-style:normal;
+
+
+
+
+
+}
+
+
+
+#original-article{
+
+
+
+
+}
+
+h3{
+	font-family: "Eb Garamond";
+	font-size: 2.34rem;
+	font-style: normal;
+	font-weight: 200;
+	line-height: 2.5rem;
+
+
+
+}
+
+h2{
+
+	color: white;
+	font-size: 1.1rem;
+
+
+
+
+
+}
+
+#heading-intro{
+
+
+
+
+}
+
+h2 > span{
+
+	background-color: #00f;
+
+
+
+}
+
+pre > span{
+	font-family: "EB Garamond" , serif;
+
+	line-height:1.4rem;
+
+	font-weight: 100;
+	font-style:normal;
+	text-align:left;
+
+
+	background-color:#E0E208;
+	color:#F66732;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+blockquote{
+
+
+
+}
+
+
+blockquote > h3 {
+
+	color:white;
+	font-weight:100;
+	font-style:italic;
+	text-align: center;
+	line-height: 3.2rem;
+
+
+
+
+
+
+}
+
+
+blockquote > cite {
+
+	background-color: white;
+
+	color:#00f;
+	font-weight:bold;
+
+
+}
+
+cite {
+	font-size:.9rem;
+	font-style:normal;
+
+
+
+}
+
+cite > em{
+
+	font-family: "EB Garamond";
+	font-weight:400;
+	font-size:1.1rem;
+
+}
+
+
+aside{
+
+
+}
+
+aside > strong{
+
+
+}
+
+aside > em{
+
+	background-color:rgb(231, 141, 186);
+	color:#abf57f;
+	font-family:" Eb Garamond";
+	font-style:normal;
+
+}
+
+aside > a{
+
+
+
+}
+
+p > strong{
+
+
+
+
+
+
+
+}
+sup{
+	background-color: #F66732;
+
+	color: #E0E208
+
+
+
+}
+
+
+
+
+
+
+sup > a[href^='#']{
+
+	color: #E0E208;
+
+
+}
+
+
+.vocab{
+
+	background-color:#A9EA84;
+	color:#925A2F;
+	font-family: "IBM Plex Mono";
+	font-weight:400;
+
+
+
+}
+
+
+
+
+HTML
+
+<!doctype html>
+<!-- contains the type of html https://typography-interaction-2627.github.io/topic/html/#:~:text=What%20type/%E2%80%8Bversion%20of%C2%A0HTML%20this%20file%20contains%2C%20so%20it%C2%A0knows%20how%20to%C2%A0parse%C2%A0it.  -->
+
+
+<!-- Hi I just realized that I had made a dumb mistake and did all my css in the reset instead of my styles causing my css to look abnormal once I put in the reset.css. I am actively fixing it. Also if you notice alot of my semantic code has chnaged due to accomedating the ideas of my sketch that I was not able to do with the current css I had available. These are mostly changing blcok elements into an inline but keeping the block properties which is using the display:inline-box.-->
+
+
+
+
+
+
+
+	<!-- where all the html content lives in https://typography-interaction-2627.github.io/topic/html/#:~:text=The%20root%20element%20of%20an%C2%A0HTML%20page%2C%20containing%20all%20the%C2%A0content   -->
+	<!-- language attribute to declare what the language is of the webpage -->
+	<html lang ="en">
+		<!-- contains the metadata of the webpage https://typography-interaction-2627.github.io/topic/html/#:~:text=The%20meta%20information,the%20page%C2%A0itself!  -->
+		<head>
+			<!-- getting the emebded code for the inter font-family https://typography-interaction-2627.github.io/topic/css/#oh-right-the-cascade:~:text=with-,%3Clink,-%3E%20element    -->
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+			<link href ="reset.css" rel = "stylesheet">
+			<!--- linking my stylesheet https://typography-interaction-2627.github.io/topic/css/#oh-right-the-cascade:~:text=with-,%3Clink,-%3E%20element -->
+			<link href = "style.css" rel = "stylesheet">
+			<!-- specified the title of teh webpage itself, if you look at the tab the name will appear https://typography-interaction-2627.github.io/topic/html/#:~:text=Specifies%20a%C2%A0title%20for%20the%20page%E2%81%A0—which%20is%C2%A0shown%20in%C2%A0the%20browser’s%20tab%2C%20and%20when%20it%20is%C2%A0shared-->
+
+
+
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pirata+One&display=swap" rel="stylesheet">
+
+
+
+			<title>Manuscript Jonathan Ramesh</title>
+		</head>
+
+	<!-- contains all the elements that are visible on the webpage https://typography-interaction-2627.github.io/topic/html/#:~:text=Defines%20the%20document’s%20body%E2%81%A0—the%20container%20for%20all%20the%20visible%20contents%2C%20such%20as%C2%A0headings%2C%20paragraphs%2C%20images%2C%20hyperlinks%2C%20tables%2C%20lists%2C%C2%A0etc  -->
+	<body>
+
+
+
+
+<!--contains the top main content,the header signfys the introductory content https://typography-interaction-2627.github.io/topic/html/#:~:text=Importantly%2C%20block%20elements-->
+		<header>
+			<!--h1 is used as the title text and the highest within the type heirarchy https://typography-interaction-2627.github.io/topic/html/#:~:text=a%C2%A0closing%C2%A0tag.-,Headings,-:%20h -->
+			<h1>Brand States: Postmodern Power, Democratic Pluralism, and Design</h1>
+			<!--used to order multiple items that are associated with each other. the <ul> tag is the block level elemnt taking up the entire width   https://typography-interaction-2627.github.io/topic/html/#:~:text=Any%20time%20you%20have%20more%20than%20two%20of%C2%A0something%2C%20you%20probably%20have%20a%C2%A0list.%20These%20are%20commonly%20used%20for%20semantic%20navigation%20elements%2C%20as%C2%A0well%E2%81%A0—think%20“here’s%20a%C2%A0list%20of%C2%A0links%20in%C2%A0this%20site”  -->
+			<ul>
+				<!-- <li> are the child of the <ul> tag which create structure collection through containing element within a <li> tag https://typography-interaction-2627.github.io/topic/html/#:~:text=to%C2%A0your%C2%A0code!-,Lists -->
+					<li>
+					<!-- the <a> tags create the startig point so the begining of one end of a journey. https://typography-interaction-2627.github.io/topic/html/#:~:text=Links:-,%3Ca%3E,-The%20%3Ca -->
+					<!--link attribute  used to authors portfolio.Tell where the anchor link should go to. It is the destination  https://typography-interaction-2627.github.io/topic/html/#:~:text=the%20Web%C2%A0page.-,HyperText%20Reference,-:%20href-->
+					<a class = "author"  href =" https://metahaven.net/">✻ Metahaven </a>
+					</li>
+					<time>
+						September 12th, 2008
+					</time>
+				</ul>
+
+		</header>
+
+
+
+
+
+
+
+	<!-- to seperate both articles, the main article and the response https://typography-interaction-2627.github.io/topic/html/#what-are-elements-->
+
+	<!-- id attribute is used to name each section https://typography-interaction-2627.github.io/topic/html/#:~:text=by%20screen%C2%A0readers.-,Identifier,-:%20id  -->
+		<article id ="original-article">
+		<!-- the section is used wihtin this code to organize and systemize each of the subheadings and their body of text inside of it https://typography-interaction-2627.github.io/topic/html/#what-are-elements -->
+			<section class = "section-heading">
+			<!--the h2 is used as the subheading for each of the sections within the article. https://typography-interaction-2627.github.io/topic/html/#:~:text=a%C2%A0closing%C2%A0tag.-,Headings,-:%20h -->
+				<h2 id = "heading-intro">
+
+					<span >
+						In the New Europe
+					</span>
+
+				</h2>
+				<!-- the headings create heirarchy. In this case the h3 creates a call out for the introduction of the article https://typography-interaction-2627.github.io/topic/html/#:~:text=a%C2%A0closing%C2%A0tag.-,Headings,-:%20h-->
+
+				<h3>
+					<!-- an inline element to create emphasis that is different from the bold in the <strong> element. It resembles and Italics. https://typography-interaction-2627.github.io/topic/html/#what-are-elements  -->
+
+					<em><span>On</span> A rainy autumn day in Tallinn at 10 am. Between twenty and thirty experts convene in a tiny classroom. Their meeting is about the national brand of Estonia. A former Soviet Republic, independent since 1991 and now a member of the European Union and NATO, Estonia sits between Scandinavia and Russia, and it is only partially happy to be doing so.			 		Almost everyone in the room thinks that Estonia doesn’t say the right things about itself to the world. No one likes Estonia’s current national brand and its trademark, “Welcome to Estonia.” Allegedly, an Irish proxy for the Interbrand corporation “created” it and ran away with an excessive amount of money. An official in charge moans that Estonian citizens should be programmed to say better things about their country when interviewed by foreign travelers (Estonian humor tends to be self-deprecating). Someone suggests that Estonia may not be a place where many things started, but it is the place where a lot of things came to—an end. Everyone laughs.
+</em>
+				</h3>
+			<!--  the bottom of the text heirarchy used for the body text https://typography-interaction-2627.github.io/topic/html/#:~:text=heading.-,%3Cp%3E%3C,Defines%20a%C2%A0paragraph -->
+
+
+
+				<p>
+					Estonian promotion mainly leads to Tallinn, the capital. But what about the country’s unspoiled countryside? Estonia has inherited heavy industry and massive shipyards, but what about its emerging IT sector? The current president considers Estonia a Nordic country along with Finland and Sweden, but the country doesn’t boast anything close to a social-democratic Scandinavian welfare state. For geographers, Estonia is part of a belt of former Soviet states stretching all the way to Murmansk, many of which are little known to international audiences. For the British, Tallinn is a target destination for stag parties, thanks to EasyJet’s direct flights from London Stansted; no-holds-barred drinking and misbehaving on the safe ground of foreign soil. For the Russians, Estonia is contested ground. With a renewed faith in the politics of Russian empire, many Russians living in Estonia refuse to speak or learn Estonian, clanning together while dreaming of an Anschluss. Estonia is the birthplace of the composer <a href ="https://en.wikipedia.org/wiki/Arvo_P%C3%A4rt">Arvo Pärt</a>.<a href ="https://en.wikipedia.org/wiki/Andrei_Tarkovsky">Andrej Tarkovsky’s</a>  seminal movie Stalker was shot in a derelict Tallinn warehouse. And the massively popular Internet phone and text messaging application Skype is from Estonia.
+
+				</p>
+
+
+				<p>
+					The discussion began with a logo, “Welcome to Estonia,” which nobody found attractive or inspiring. Soon however it was no longer about that but about the way Estonian citizens should behave on the streets. The person in charge of the logo made no secret of her ambition to change that behavior if she could.
+
+				</p>
+
+
+				<p>
+					Consequently, our meeting was open to the public. That alone, however, didn’t make it democratic. We had all been invited because of our proximity to the issue of nation branding and not because of our capacity to represent the Estonian people. We were part of a network of experts.
+				</p>
+
+
+				<p>
+					In recent years, branding has come to be considered as appertaining to a much wider arena than one of commercial trademark alone. This has made it both easier and more difficult to discredit branding. While it is easier to condemn it for its hegemonic role across the spectrum, it becomes harder to pinpoint exactly what that hegemony implies. Beyond the commercial logo, the “place brand”—signifying a nation, region, or city—is a trademark for a place. Branding, in this situation, is both less autonomous and more elusive in its role and position.
+				</p>
+
+
+				<p>
+					A place brand is essentially little more than a first impression. It is the first two, three thoughts people have when they think about a place. To change these assumptions in a more “favorable” direction may require a stylish (or terrible) logo, but it may also consist of more fundamental policy shifts which affect the lives of people: “defining the most realistic, most competitive and most compelling strategic vision for a country, region or city; this vision then has to be fulfilled and communicated,” as the place-branding expert <a href ="https://en.wikipedia.org/wiki/Simon_Anholt">Simon Anholt</a> describes it. What makes place branding slippery in terms of its politics is that
+				</p>
+				<h3>
+
+					<pre><span>it increasingly stands as both a visual practice and a modality of governance.</span></pre>
+				</h3>
+
+
+				<p>
+				<!-- used the href which is targeted to the ID of the defitinition below. It will jump to the Defintion with the ID Associated   https://typography-interaction-2627.github.io/topic/html/#:~:text=The%20id%20specifies%20a%C2%A0singular%2C%20unique%20element%20on%C2%A0a%C2%A0page%E2%81%A0—for%20CSS%20targeting%20and%20anchor%20(scroll%2C%20jump)%20links%2C%20prepended%20with  -->
+					In this article we will examine two political concepts that currently inform place branding, focusing on nation states.<strong class = "vocab"> “Soft power,”   </strong> <sup><a href = "#target-soft-power">1</a></sup>the first of these two, is already widely identified with branding.<strong class = "vocab" >“Network power,”</strong><sup><a href = "#target-network power">2</a></sup>the second, is not yet fully considered as such. We will argue that in its current stage, state branding has not yet seen critical, alternative, or counter-hegemonic approaches. We will conclude that the recognition of network power as a form of structural coercion provides the best starting position for the development of such alternative approaches to state branding.
+				</p>
+
+
+
+				<footer>
+				<!-- assides is a section that has some relevance to the main body paragraphs and also being a block level element. Used as a complementary piece, It used here to display the defintions. Also it takes up the etire width of screen so they cna stack up on each other which is done by wrapping each definition within it's own aside block https://typography-interaction-2627.github.io/topic/html/#:~:text=%3Carticle%3E-,%3Caside%3E,-%3Cblockquote%3E &  https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/aside -->
+				<aside id="target-network power">
+					<!--achor used when clicking on the number netx to the key words that goes to its defintion https://typography-interaction-2627.github.io/topic/html/#:~:text=The%20id%20specifies%20a%C2%A0singular%2C%20unique%20element%20on%C2%A0a%C2%A0page%E2%81%A0—for%20CSS%20targeting%20and%20anchor%20(scroll%2C%20jump)%20links%2C%20prepended%20with%20#%E2%80%8A.-->
+
+					<!-- the strong element to match with the defintion used within the text to highlight the keyword https://typography-interaction-2627.github.io/topic/html/#what-are-elements -->
+						<strong class = "vocab" >network power -</strong>
+						<em>
+							the power of actors within networks over those outside networks
+
+						</em>
+						<!---the sup element is used to align to the citation that is presented in the text. Its to create a superscript which displays a small piece of text above the baseline https://typography-interaction-2627.github.io/topic/html/#:~:text=Inline%20Text%20Elements & https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/aside-->
+						<sup>
+							1
+						</sup>
+
+
+				</aside>
+				<aside id = "target-soft-power">
+
+
+					<strong class = "vocab">
+						soft power
+					</strong>
+
+					<em>
+						The power of actors within networks over those outside networks
+					</em>
+					<sup>
+						2
+					</sup>
+
+				</aside>
+				</footer>
+
+			</section>
+
+
+
+
+
+
+			<section class = "section-heading">
+
+				<h2>
+					<span>
+					Soft Power and State Branding
+					</span>
+
+				</h2>
+
+
+			<!-- there is <a> tags used across the  -->
+				<!-- <mark> tage was used as a inline tag to highlight a key quote.https://typography-interaction-2627.github.io/topic/html/#what-are-elements -->
+					<p>It is a widely accepted idea that place branding draws on attraction and legitimacy in a transnational network of relations. What is employed is a genuine form of power called “soft power”—the ability to obtain the outcomes you want by attracting others. <a href  = "https://en.wikipedia.org/wiki/Joseph_Nye">Joseph Nye</a>, who coined the term, says that, <mark>“power today is less tangible and less coercive among the advanced democracies than it was in the past. At the same time, much of the world does not consist of advanced democracies, and that limits the global transformation of power.”</mark>
+
+					<p>Not surprisingly, soft power blossomed after the end of the Cold War. It specifically worked for the United States during the Clinton administration, across the spectrum of political ideas, cultural products and commercial brands, as well as in the field of diplomacy. For example, someone like <a href = "https://en.wikipedia.org/wiki/Richard_Holbrooke">Richard Holbrooke</a> was able to put international conflicts to an end in volatile and playful ways, replacing <a href = "https://en.wikipedia.org/wiki/Henry_Kissinger">Henry Kissinger’s</a>  Cold War-style “chess” with what Holbrooke called “jazz.” In subsuming cultural factors, soft power is understood to have included the Hollywood film industry as well as commercial brands like Coca-Cola and Nike in its overall objective of gaining influence and legitimacy.</p>
+
+
+					<p>Soft power’s single most important asset is its allegedly non-coercive nature, the capacity to reach desirable outcomes without involving force, threat, or payment. Political theorists such as Chantal Mouffe would have problems with such a claim, on the grounds that there can be no political order that does not exclude alternatives, and indeed soft power is strongly premised on the American possession of military and economic hegemony and thus on a form of structural coercion. Of course, the idea of structural coercion is more recognized in the theory of network power, which we will explore at a later stage.</p>
+
+					<p><a href ="https://de.wikipedia.org/wiki/Peter_van_Ham">Peter van Ham</a> asserts that “like commercial brands, we talk about a state’s ‘personality,’ describing it as ‘friendly’ (i.e., Western-oriented) and ‘credible’ (ally), or, in contrast, as ‘unreliable’ (‘rogue state’).” Van Ham’s idea of a successful and attractive corporate brand personality consists in an explicit attraction to the West (the U.S. and its European allies). He classifies soft power and state branding under the wider umbrella of postmodern power, which “exercises power (generally considered to be the ability to alter the behavior of others to get what you want) without using coercion and/or payments.” Van Ham’s 2001 essay “The Rise of the Brand State,” published in Foreign Affairs, opened up the field of political science to the topic of state branding (subsequently, Van Ham became involved in a project to create a national brand for The Netherlands). At the same time, his article having been written prior to the September 11 attacks—prior also to what is perceived as a global decline in American hegemony giving way to the end of the post-Cold War unipolar model—some of the most elementary assumptions may need to be reexamined in light of an emerging geopolitical situation.</p>
+
+					<p>Van Ham’s extensive article on the topic, entitled “Place Branding: The State of the Art,” examines three case studies: the European Union, the United States, and Kazakhstan. Van Ham’s most substantial departure from his initial ideas concerns the EU, which he now suggests should promote itself more assertively as a security brand capable of wielding military power. Secondly, he states that the U.S. needs to rebuild its soft power resources. “For the United States, it has proven difficult to brand itself as a force for good and democracy, with stories about torture and human rights abuses in Abu Ghraib and Guantánamo hitting the headlines of newspapers all over the world.” Here we are reminded of Joseph Nye’s own reapplication of the soft power concept during the Bush administration.</p>
+
+					<p>Van Ham’s third example is Kazakhstan. Being unknown and unbranded makes a state vulnerable to negative branding and image hijacks by third parties. This happened to Kazakhstan with the release of the film <a href = "https://www.youtube.com/watch?v=5oZh7unviAI">Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan</a>. Borat, played by comedian <a href ="https://en.wikipedia.org/wiki/Sacha_Baron_Cohen">Sacha Baron Cohen</a>, makes use of the fact that global audiences are unaware of what the former Soviet republic of Kazakhstan looks like. The film reshapes Kazakhstan’s image into that of a grotesque backwater inhabited by village idiots, interpersed with Soviet-era footage of agriculture and heavy industries. Van Ham’s analysis concentrates on the controversies following its release. The Kazakh government felt obliged to hire public relations firms, running advertisements in major international newspapers and on television, to tell the world what it “really” was—a fiction of an entirely different kind, of course. Van Ham concludes that “Cohen could have easily made a fool of other unknown countries (like Turkmenistan and Uzbekistan), pointing up the fact for all unbranded countries the risk of not being in charge of their image and reputation and the inability for a country to be in full control of one’s own brand.”</p>
+
+
+`			</section>
+
+
+
+			<section class = "section-heading">
+				<h2>
+					<span>
+					Negative Brand Value and Peripheries
+					</span>
+				</h2>
+
+				<p>As much as Borat was fictitious, everything about it produced real effects. Sacha Baron Cohen recorded the greater part of the Kazakhstan scenes in a remote Romanian village. It is sometimes claimed that Borat confronts Western audiences with their own deeply held prejudices about foreign places and peoples. But much of Borat is itself representative of this attitude. The new nations that emerged after the collapse of the Soviet Union continue to inspire mockery on the part of the West, interrupted occasionally by declarations of intent to help these nations move forward.</p>
+
+
+				<p>In 1999 the British branding expert <a href ="https://en.wikipedia.org/wiki/Wally_Olins">Wally Olins</a> wrote in a book chapter called <em>“Putting the unknown nation on the map”</em> :“How many people—apart from real specialists—can tell the five former Soviet Central Asian ’stans’ apart? In reality, Uzbekistan, Kyrgyzystan, Turkmenistan, Kazakhstan, and Tajikistan are very different. Some large, some small, some have huge resources, others don’t, some are old-style communist dictatorships, others are evolving in a more or less democratic direction and, of course, they all dislike each other. But they’ve got a real problem in establishing who and what they are in a world increasingly cluttered with ‘new’ nations.” </p>
+
+
+				<p>At present, the negative brand value of many of these entities, some of which have split up into breakaway regions, is expressed by terms like quasi states, pseudo-states, and hollow states. The geographers <a href = "https://www.wikidata.org/wiki/Q4228525">Vladimir Kolossov</a> and <a href = "https://www.colorado.edu/geography/john-oloughlin">John O’Loughlin </a> identify pseudo-states by their partial governance, possessing transitional or incomplete statehood. <a href = "https://en.wikipedia.org/wiki/Francis_Fukuyama">Francis Fukuyama</a> speaks about  <strong class = "vocab" > “weak states,” </strong> <sup><a href = "#target-weak-states"> 3 </a></sup> in whose poorly governed regions terrorism and anti-Western practices flourish. But for Wally Olins, the issue is invariably a simple one: emerging nations all have problems with their brand, as no one really knows or cares what they are. In 2006, when Olins was asked which would be his favorite nation to brand, the same ambiguity that had previously befallen the former Soviet “stans” now applied to new EU countries. Olins replied that he would like to brand “almost any Central European country. Who the hell knows the difference between Slovenia and Slovakia?”</p>
+				<!-- -->
+
+				<p>When we asked Simon Anholt to respond to this quote, he wrote that,<em>“Olins was trying to emphasize the indifference that most people feel about most countries, especially smaller and not very famous ones. I don’t think he was expressing his own views.”</em> Anholt continued, <em>“he was parodying public opinion.”</em> However, it is this alleged “indifference” of public opinion, combined with offhand jokes about countries’ names and their marginality, that keeps the engine of revenue running for some of the world’s branding agencies. Branding experts and marketing gurus may have a vested interest in telling peripheral and unbranded countries how hopelessly obsolete they appear without a state brand of their own, but the threat to an unbranded state is a serious decline in visibility, legitimacy and social capital. However positive and friendly the idea of state branding may sound, it seems that there is a structurally coercive force in the background, leaving the unbranded nation no choice but to “join the brandwagon,” as Van Ham calls it.</p>
+
+				<aside id="target-weak-states" >
+
+						<strong class = "vocab">
+
+							weak states -
+
+						</strong>
+						<em>A weak state, in his framework, is one where that institutional capacity has broken down — regardless of how much the state formally claims to govern — leaving it unable to deliver basic public administration or security.</em>
+						<sup>
+							3
+						</sup>
+
+				</aside>
+
+
+
+
+			</section id = "section-three">
+				<h2>
+					<span>
+						Network Power and State Branding
+
+					</span>
+
+				</h2>
+
+				<p>States which have acquired a large amount of social capital in the form of positive ties within networks of other states, non-governmental organizations, corporations, and other actors are more likely to be seen as legitimate and authoritative than those operating on their own, without many friends. In order to fully grasp the consequences of such a condition, we need to understand state branding in the context of globalization and look beyond soft power. We need to approach state branding, as it were, not from the position of the former sovereign ruler but from the vantage point of the networks that decide the standards of sociability. In the process of globalization, networks become social structures that tie parts of the world together, independent of sovereign borders and even independent of “international relations.” While indeed, sovereign coercion may have become a thing of the past in this new situation, there may be structural coercion involved through the standards which networks adopt. According to <a href ="https://www.law.berkeley.edu/our-faculty/faculty-profiles/david-singh-grewal/#tab_profile">David Grewal</a> , “network power” is a dynamic that centers around certain standards (conventions accepted and used by many), and potentially leading to “the progressive elimination of alternatives over which otherwise free choice can effectively be exercised.” While networks cross sovereign power divisions, the paradox is that network power is granted by a popular vote, expressed by the “voluntary” subscription to a network standard. This vote however acts like the value of capital under an interest rate. Many subscriptions generate more capital. They gradually, but steadily, suppress the viability of alternatives, as these progressively lose their benefits.</p>
+
+				<p>Grewal offers a compelling analysis of these power structures. While Van Ham mentions thinkers like <a href ="https://en.wikipedia.org/wiki/Michel_Foucault">Michel Foucault</a> and <a href = "https://en.wikipedia.org/wiki/Antonio_Gramsci">Antonio Gramsci</a> as part of a constructivist view of power, Grewal asserts that both theorists share a view of power that is heterodox: it is not exerted top-down but instead works “through the structure of social relations.” These theories can, however, “have trouble locating or articulating the role of agency in social structuration.” For what concerns Grewal is the real freedom of choice made under network power. He argues that, under network power, formally free choices ultimately become forced choices made without authoritative command being needed:</p>
+
+			<!-- used to seperate the body text from the quote https://typography-interaction-2627.github.io/topic/html/#:~:text=CSS%2C%20though.%C2%A0Soon!-,Blockquote    -->
+				<blockquote>
+					<cite>David Grewal - <em>Network Power: The Social Dynamics of Globalization</em></cite>
+
+					<h3><mark class ="quotation-mark">Two features are relevant for the consideration of choice in situations of network power. First, the consequences of an individual’s choice are determined in coordination with the expectations of others who face similar, interdependent choices. Second, since network power grows through the operation of choice, as individuals must choose to join networks, it must always involve consent of a formal kind, at least. I ignore here cases in which networks move to ascendancy through the forced conversion</mark></h3>
+
+
+
+						<h3><mark class ="quotation-mark">of outsiders because the more interesting case is not when direct force brings about conformity to a dominant standard, but when the structural condition of formally free, interdependent choice drive communities to that point.... The concept of network power reveals complexities in the connection between the idea of consent and the idea of freedom.</mark></h3>
+
+						<h3><mark class ="quotation-mark">Beyond what I earlier called the threshold of inevitability, a standard is pushed toward universality, and its network becomes poised to merge with the population itself. It is “pushed” by the activity of people evaluating consequences and, ultimately, choosing to adopt a dominant standard because of the access it allows them to forms of cooperation with others.</mark></h3>
+					<!--an inline element to create a citation for the quote https://typography-interaction-2627.github.io/topic/html/#:~:text=%3Ca%3E-,%3Ccite%3E,-%3Ccode%3E & https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/cite -->
+
+				</blockquote>
+
+
+				<p>Soft power, according to Joseph Nye, is “the ability to get the outcomes you want without having to force people to change their behavior through threats or payments.” What complicates this premise is that a “payment” could be made in the currency of social capital rather than in money, while a “threat” could be made by controlling or restricting access to social capital rather than through an economic sanction. If for Nye a payment belongs to the category of hard power because it is based not on attraction and free subscription but on the issuance of cash to achieve an outcome, forms of reward and punishment implicit in networks are still left unconsidered; that is, on occasions or in situations where subscription to a standard was necessary rather than voluntary.</p>
+
+
+			<section id ="section-four">
+				<h2>
+					<span>
+						Pluralism and Standards in State Branding
+					</span>
+				</h2>
+
+				<p>Most state brands are designed under the power of consent, the impact of which we have attempted to illustrate here with brief explorations of soft power (which is already linked with place branding) and network power (which comes relatively new to it).</p>
+
+				<p>State brands signify a communications standard of sorts—they are about the diplomatic and aesthetic requirements of post-sovereign and transnational networks identified with the term “globalization.” These networks involve various forms of temporary and long-term coalitions between states and non-state actors such as NGOs and corporations, as well as flows of tourism, information, and foreign investment. On the other hand, state brands are also still firmly rooted in the idea of promoting distinct places on the world map where “an otherwise disorderly and disoriented world” is kept at bay by rendering distant (and potentially unattractive, illegitimate, and scary) places into reliable, welcoming, and indeed, “attractive” destinations.</p>
+
+				<p>Overlaps between places and information networks are already present in some of these brands themselves. States as varied as Belgium and Italy use their country’s Internet domain name suffix as a national brand. While Belgium has more fully embraced its “.be” suffix as a networking protocol, Italy’s “.it” is still reminiscent of traditional tourist brands in the vein of <a href ="https://en.wikipedia.org/wiki/Joan_Miró">Joan Miró’s</a> famous 1980s trademark for Spain. Scotland is well on its way with “.sco,” an Internet suffix of its own. The Spanish region of Catalonia boasts an independent image with its newly acquired suffix “.cat” . Such a proliferation of sub- and supranational domain suffixes becoming place brands may indicate increasing overlaps between the soft power of attraction and the network power of standards.</p>
+
+				<p>For Van Ham, establishing a state brand is a matter of supranational competition. “Although many places offer the same ‘product’—territory, infrastructure, educated people, and an almost identical system of governance—they must compete with each other for investment, tourism, and political power, often on a global scale.” Van Ham suggests that place brands need to be distinguishable precisely in order to surpass their structural similarity, which in the global marketplace could be regarded as a kind of redundancy. In practice, this idea of competition does not result in a great variety of approaches to state branding, but to a stalemate situation of relatively uninspired “safe” choices. The iconography as well as the ideology of state branding has become so constrained by marketing and so identified with promotion that, indeed, many place brands are now becoming demonstrations of their own incapacity to assess a difference of place with a difference of approach.</p>
+
+				<p>Either this diversity is, in reality, not genuinely experienced as such (indeed, some brand experts do seem to identify more with the general public’s alleged disinterest than with any intimate knowledge of distinct geographies) or such diversity is genuinely nonexistent and perhaps obsolete (i.e. globalization and its “non-places,” “spaces of flows,” or “junkspace” are becoming more and more alike). If the latter is the case, then a higher degree of supranational standardization of nation brands would at least do away with the quasi-choice and inequalities currently on offer. A patented state branding standard—perhaps according to the Internet domain suffix or to the DIN system—would at least generate a new sense of networking rationality operating parallel to, for example, the realm of national flags.</p>
+
+				<p>Another option altogether would be to explore pluralism in state brands, based on new global redistributions of political power, both sovereign and in networks. Much of the former “unipolar” global dominance that informed soft power is now in disarray. This is not to imply that soft power is now ineffective, but only that it is underwritten less by a single hegemony. We could also say that some of the ideas theorists such as Foucault and Gramsci had about power being distributed through social relations are to be increasingly observed in the geopolitical arena instead of merely in the former “private sphere” of social relations.</p>
+
+
+				<p><a href = "https://en.wikipedia.org/wiki/Richard_N._Haass">Richard Haass</a> writes that “power is now found in many hands and in many places,” giving way to a geopolitical spectrum he calls “nonpolar”:</p>
+
+
+				<blockquote>
+
+					<cite>Richard Haass- <em>The Age of Nonpolarity, Foreign Affairs</em></cite>
+
+
+					<h3><mark class ="quotation-mark">There are many more power centers, and quite a few of these poles are not nation-states. Indeed, one of the cardinal features of the contemporary international system is that nation-states have lost their monopoly on power and in some domains their preeminence as well. States are being challenged from above, by regional and global organizations; from below, by militias; and from the side, by a variety of nongovernmental organizations (NGOs) and corporations.</mark></h3>
+
+
+				</blockquote>
+
+				<p>While the unstoppable maelstrom of globalization does away with many of the former assets of sovereign power, Haass speaks of how “difficult and dangerous” nonpolarity is.</p>
+				<p>On a different theoretical premise, <a href ="https://en.wikipedia.org/wiki/Chantal_Mouffe">Chantal Mouffe</a> has argued for a multipolar world—a geopolitical spectrum seemingly less obsessed with the flows of power in networks than with a distributed and “plural” sense of local, regional, and national sovereignty. Mouffe asserts that we have to:</p>
+
+
+				<blockquote>
+
+
+					<cite>Chantal Mouffe - <em>On the Political</em></cite>
+
+					<h3><mark class ="quotation-mark">"…take pluralism seriously instead of trying to impose one single model on the whole world, even if it is a well-meaning cosmopolitan one. It is therefore urgent to relinquish the illusion of a unified world and to work towards the establishment of a multipolar world. We hear a lot today about the necessity of an effective “multilateralism.” But multilateralism in a unipolar world will always be an illusion. As long as a single hegemonic power exists, it will always be the one that decides if it will take into consideration the opinion of other nations or act alone. A real multilateralism requires the existence of a plurality of centres of decision and some sort of equilibrium—even if it is only a relative one—among various powers.”</mark></h3>
+
+				</blockquote>
+
+				<p>It seems that the theoretical battle concerning which kind of polarity applies to the current situation remains unresolved. For Haass in 2008, models of unipolarity and multipolarity already belong to the recent past, while for Mouffe in 2005, unipolarity hasn’t ended yet and multipolarity remains an emerging future prospect. Haass recognizes the rise of regional sovereign power hubs across the continents as an important part of his nonpolar model, but still places more emphasis on the many kinds of elusive networked agents as well as the withering away of traditional structures of diplomacy, accountability, and coalition.</p>
+
+				<p>Typically, a place brand is created by think tanks, focus groups, consultancies, and other public-private alliances. Often, in order to gain public support and sympathy, additional promotional campaigns are initiated to appease its stakeholders (the citizens). Some place brands have used open-ended opportunities for citizens to become part of the brand message, such as in the case of the current brand for the city of Berlin. Though this provides an incentive to enhance social capital for citizens, it is not necessarily democratic: while offering an opportunity, the brand creates new inequalities (just as acquiring an “employee of the week” status at McDonald’s is not the same as unionizing to get a pay raise). Once again, the dynamics at play look more like a networking protocol. That protocol itself is privately crafted—it is not open to public deliberation.</p>
+
+				<p>State branding ultimately requires a new paradigm that goes beyond soft power—one less focused on promotion and indeed more concerned with both the structural standardization implied by network power and a pluralistic understanding of decentralized and distributed political alternatives being developed on various scales. The involvement of designers and other branding experts becomes necessary to take state branding out of its current singularity of approach and into an engagement with its theoretical and political premises, as well as its application. What was revealed by the Estonian branding session described above was that the complexity of Estonian representation and self-image—combined with the reality of its position between Russia and the Nordic countries—makes mere promotion of its desirable assets an impossibility. Rather than regard state brands as promotional tools, we should perhaps see them instead as diplomatic and journalistic “accounts” of a nation’s own self-reflexive awareness with regard to the multi-faceted reality of globalization</p>
+
+				<p>The latest news is that the Unites States now identifies its soft power more fully with network standards. Undersecretary of State for Public Diplomacy <a href ="https://en.wikipedia.org/wiki/James_K._Glassman">James Glassman</a> has announced that as part of its <a href ="https://www.nextgov.com/people/2008/12/public-diplomacy-moves-ahead/198220/">state branding efforts</a>, U.S. public diplomacy now sneaks into forums and social networking platforms on the Internet to promote the positive aspects of U.S. democracy. When asked by a journalist about the freedom to have ideas other than those favorable to the American point of view, Glassman responded, “We’re not using Facebook to launch a war. Absolutely not. In fact, what we’re using Facebook for is to invite exactly what you’re talking about, which I tend to call the—maybe too grandiosely—the grand conversation. We want a conversation.”</p>
+
+
+			</section>
+
+
+		</article>
+
+		<article id ="response">
+			<header>
+			<h1>My Response</h1>
+			<ul>
+				<li>
+					<a class = author >Jonathan Ramesh </a>
+						</li>
+						<li>
+							<time>September 22nd, 2026</time>
+						</li>
+					</ul>
+			</header>
+
+
+
+			<section id ="section-body">
+
+				<p>On August 21, 2025, the _Improving Our Nation Through Better Design_ executive order was signed, identifying the United States’ brand identity and government websites as outdated and in need of a major overhaul. This task would be handled by the newly created National Design Studio, with RISD alumnus and Airbnb co-founder Joe Gebbia appointed as Chief Design Officer. Prior to this, Gebbia had been working in DOGE, created by Tesla CEO Elon Musk, and had been placed at the Office of Personnel Management. Through his work on “modernizing” the federal retirement system, he came to want to take his experience in cost-cutting to a bigger stage. He met with then-President Donald Trump and proposed himself for the position. Other DOGE staff members, such as Edward Coristine, would also join the team, with Coristine serving as Director of Engineering. Peter Arnell, who had previously worked on the Pepsi brand in 2008 and the Tropicana rebrand, would be assigned the role of Chief Brand Architect.</a>
+
+
+
+				<p>Trump had realized how much a rebrand could accomplish, not just for the United States but for his own image as well, writing in his memo for the order: “I am announcing ‘America by Design,’ a national initiative to improve experiences for Americans, starting by breathing new life into the design of sites where people interface with their Government. It is time to update the Government’s design language to be both usable and beautiful.” With Trump’s approval rating hitting an all-time low, what can he do to reverse this trend? Would it involve implementing policies that benefit the working class and addressing the effects of Western imperialism? No, of course not, as actual policy would create real, tangible change for Americans. Instead, his administration reinforces the overwhelming power of the government over the American people through federal agencies like ICE. Design is not off the hook: with its ability to implant desires and shape intentions throughout the general populace, it is only truly at its most effective when in the hands of the ultra-powerful.</p>
+
+				<p>Looking at the digital design artifacts released after the policy was implemented, you start to notice that the design language seems more reminiscent of a tech startup than a governmental body. One of the projects they worked on that caused a stir was TrumpRx, whose website and phone app drew on trendy font selections. A condensed version of Instrument Serif made up most of the heading text across the site, with GSAP scroll animations splashed throughout. There is a level of unprofessionalism in this design language, given its governmental context. Digital experiences within governmental agencies have always been sluggish; their websites borrowed the design language of the 2000s and took absolutely forever to load. The age of these websites became associated with the institutions themselves, and it started to become part of their “charm” for some.</p>
+
+				<p>This switch to a newer design language is not accidental; it reveals the internal dynamics that exist within the United States. Understanding the cycle of “fashion” within the design space helps make these dynamics visible: aesthetics, while temporary, can have their genealogies mapped out and traced through space and time. Just as AI companies increasingly use trends associated with the “handmade” and “craftiness” to help users digest the amount of slop that comes out of their applications, the government borrows from these aesthetics to help citizens digest the unsettling idea that universal healthcare will never be a possibility in the United States, even as premiums skyrocket. At least, if you’re going to pay all that money, shouldn’t the website look pleasing as well?</p>
+
+				<p>In 2006, Sacha Baron Cohen released what would become his most iconic movie, _Borat_, a mockumentary exploring Americans’ underlying xenophobia through the racist caricature of Borat, a character from Kazakhstan, a nation relatively unfamiliar to many viewers at the time. The movie had an unexpected effect: because of the public’s limited knowledge of Kazakhstan, Cohen was able to rewrite the nation’s entire identity for an outside audience, depicting it as an impoverished and backward society. Instead of using footage of Kazakhstan itself, the scenes supposedly set there were filmed in Romania, constructing a simulacrum that those immersed in that cultural zeitgeist would accept as the real thing. This damage to its image did not bode well for Kazakhstan, which swiftly took legal action against the movie.</p>
+
+				<p>It was no coincidence that this destructive power of image erasure was connected to _Borat_’s proximity to the United States. Produced by Hollywood and shown in Western theaters, the film demonstrated the power of the United States and its public to control the image of a smaller nation. A country without an established identity in the eyes of the general public is thus assigned meaning through Western media production, which attaches familiar Orientalist character traits to Kazakhstan itself. This happened because Kazakhstan’s identity was treated as an empty space, ready for someone or something to reshape. Smaller nations do not have the luxury of remaining in this unbranded state: given the cultural capital of bigger countries, the foreign investment and tourism they can attract hinge on what the general public thinks of them. It is the power of branding that strips these smaller nations of their unique ties to their national identities. Instead, they adopt the design tropes of popular studios that have branded bigger nations, seeking “access” to the club in order to survive and prosper.</p>
+
+				<p>In a twist of fate, the Trump administration would face this same image reconstruction—or, to many, the construction of a more accurate image. Domestic media productions, such as _SNL_ and Jon Stewart’s parodies of the administration, spread across the internet, stripping Trump of seriousness and formality and turning him into a joke. This reconstruction of the Trump brand would be seen as a threat. The widely publicized cancellation of Stephen Colbert’s show illustrates how important brand reputation can be and how vulnerable it is to shifts in public opinion.</p>
+
+				<p>This, however, would be a false notion of radical rebellion, as it fails to understand the true branding of the Trump administration: the use of irony to absorb criticism and expand its image even further. While a great logo and branding materials can help bolster soft power, design’s real power lies in its ability to reorganize and reorient the thinking of the populace. With that power in the hands of the most powerful, it is difficult to see whether design in its current forms has the fangs to enact real change. Kazakhstan itself had to learn this the hard way in 2020, when Borat’s famous slogan, “Very nice,” originally used to mock the nation, was adopted by Kazakhstan’s foreign ministry. Once an identity is constructed, it becomes very difficult to return to what came before or to reshape it into something else.</p>
+
+			</section>
+		</article>
+	</body>
+</html>
