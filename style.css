@@ -129,14 +129,27 @@ header >ul >li > time {
 
 /*article body intro */
 
+
+
+
+
+
 article{
 
 	margin-block-end:4lh;
 
 }
+article >  section > h2 {
 
+font-size:var(--text-heading-one);
+margin-block-end:2.25lh;
+background-color: var(--color-main);
+display:inline-block;
+color:white;
 
-article > section > h2 {
+}
+
+article > section > section > h2 {
 
 font-size:var(--text-heading-one);
 margin-block-end:2.25lh;
@@ -177,31 +190,51 @@ line-height:2.5rem;
 
 }
 
-
+/*TEMPORARY Adjusting the pargaph differentce */
 article > section >section > p{
 
-margin-block-end:1.5lh;
-
-}
-
-article > #section-heading-1 > section{
-
-max-width:60%;
+	margin-block-end:1.5lh;
 
 }
 
 
-article > #section-heading > h2{
+article > section > p{
 
-
-text-align:right;
+	margin-block-end:1.5lh;
+	background-color: #0000FF;
 
 }
 
-article > #section-heading > section > section{
 
-text-align:right;
-max-width:60%;
+
+
+
+
+
+article >section > section{
+
+width:60%;
+
+}
+
+
+
+
+
+.text-body{
+	display:inline-block;
+
+
+
+
+}
+
+.test-column{
+	display:inline-block;
+	position:sticky;
+	top:2rem;
+	width:35%;
+	border-color: #0000FF;
 
 
 
