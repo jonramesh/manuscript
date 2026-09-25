@@ -232,7 +232,7 @@ width:60%;
 .test-column{
 	display:inline-block;
 	position:sticky;
-	top:200px;
+	top:0px;
 	width:35%;
 	border-color: #0000FF;
 
