@@ -178,14 +178,58 @@ line-height:2.5rem;
 }
 
 
-article > section > p{
+article > section >section > p{
 
 margin-block-end:1.5lh;
 
 }
 
+article > #section-heading-1 > section{
+
+max-width:60%;
+
+}
+
+
+article > #section-heading > h2{
+
+
+text-align:right;
+
+}
+
+article > #section-heading > section > section{
+
+text-align:right;
+max-width:60%;
+
+
+
+}
+
+
+
+
+
 
 /* article-body-asside*/
+
+
+
+/*asside*/
+#aside-text {
+/**
+max-width:30%;
+display:inline-block;
+**/
+
+}
+
+
+
+
+/*blockquote */
+
 
 blockquote{
 
@@ -203,12 +247,6 @@ font-size: 2.5rem;
 
 
 }
-
-/*blockquote */
-
-
-
-
 
 
 
