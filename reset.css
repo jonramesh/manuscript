@@ -1,378 +1,56 @@
-body {
+/* Derived from: https://github.com/elad2412/the-new-css-reset */
 
-font-family: "Inter" , sans-serif;
-
-
-
-background-color:#7b7b7b;
-
+/* Remove all the styles of the “User-Agent-Stylesheet” except for the `display` property. */
+*:where(:not(html, svg *, symbol *)) {
+	all: unset;
+	display: revert;
 }
 
+/* Preferred box-sizing value. */
+*, *::before, *::after { box-sizing: border-box }
 
-
-main{
-
-
-
-
+/* Fix mobile Safari increase font-size on landscape mode. */
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
 }
 
-header{
+/* Reapply the pointer cursor for anchor tags. */
+a, button, summary { cursor: revert }
 
+/* Remove list styles (bullets/numbers). */
+ol, ul, menu, summary { list-style: none }
 
-}
-ul{
-
-	text-align:right;
-	list-style:none;
-}
-
-
-ul > a {
-	background-color:transparent;
-	text-align: right;
-
-
-
+/* For images to not be able to exceed their container. */
+img {
+	max-block-size: 100%;
+	max-inline-size: 100%;
 }
 
+/* Remove spacing between cells in tables. */
+table { border-collapse: collapse }
 
+/* Safari issue when using text input. */
+input, textarea { -webkit-user-select: auto }
 
+/* Revert for textarea elements on Safari. */
+textarea { white-space: revert }
 
+/* Minimum style to allow to style meter element. */
+meter { appearance: revert }
 
+/* Default text opacity of input placeholder. */
+::placeholder { color: unset }
 
-.author{
+/* Nix user-agent overlay colors. */
+::backdrop { background: unset }
 
-	background-color:transparent;
-	text-decoration: none;
+/* Fix the feature of 'hidden' attribute. */
+:where([hidden]) { display: none }
 
+/* Restore draggable feature. */
+:where([draggable='true']) { -webkit-user-drag: element }
 
-}
-
-
-header > h1 {
-	text-align: right;
-	font-family: "EB Garamond", serif;
-	font-weight: 400;
-
-
-
-
-
-}
-
-header> ul > li {
-	font-family: "IBM Plex Mono";
-	font-weight:500;
-	background-color: transparet;
-
-
-}
-
-header > ul > li:nth-child(2) {
-	color:rgb(45, 44, 44);
-	font-weight:400;
-
-
-
-}
-
-ul > li > a:visited {
-
-	color:black;
-
-
-
-}
-.section-one{
-
-
-
-
-
-}
-
-
-p{
-	font-family:"Inter",serif;
-	font-size: 1rem;
-	line-height:1.6rem;
-
-
-
-
-
-
-}
-
-
-
-
-
-a{
-	background-color:#F66732;
-
-
-
-
-
-}
-
-
-a[href^='https://'] {
-
-	color: #E0E208;
-	font-family: "IBM Plex Mono", sans-serif;
-
-
-
-
-
-
-
-}
-
-em > span{
-
-
-
-	font-size:5rem;
-	font-family:"Pirata One";
-	letter-spacing: -.4rem
-
-
-
-}
-
-mark{
-
-	background-color:#00f;
-	color:white;
-
-
-
-}
-
-
-
-
-h3 >  em{
-
-	font-family: "EB Garamond" , serif;
-
-	line-height:1.4rem;
-
-	font-weight: 100;
-	font-style:normal;
-	color: white;
-
-
-	color:black;
-
-}
-
-h3 > pre {
-
-
-
-		font-family: "EB Garamond" , serif;
-
-	line-height:1.4rem;
-
-	font-weight: 100;
-	font-style:normal;
-
-
-
-
-
-}
-
-
-
-#original-article{
-
-
-
-
-}
-
-h3{
-	font-family: "Eb Garamond";
-	font-size: 2.34rem;
-	font-style: normal;
-	font-weight: 200;
-	line-height: 2.5rem;
-
-
-
-}
-
-h2{
-
-	color: white;
-	font-size: 1.1rem;
-
-
-
-
-
-}
-
-#heading-intro{
-
-
-
-
-}
-
-h2 > span{
-
-	background-color: #00f;
-
-
-
-}
-
-pre > span{
-	font-family: "EB Garamond" , serif;
-
-	line-height:1.4rem;
-
-	font-weight: 100;
-	font-style:normal;
-	text-align:left;
-
-
-	background-color:#E0E208;
-	color:#F66732;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-blockquote{
-
-
-
-}
-
-
-blockquote > h3 {
-
-	color:white;
-	font-weight:100;
-	font-style:italic;
-	text-align: center;
-	line-height: 3.2rem;
-
-
-
-
-
-
-}
-
-
-blockquote > cite {
-
-	background-color: white;
-
-	color:#00f;
-	font-weight:bold;
-
-
-}
-
-cite {
-	font-size:.9rem;
-	font-style:normal;
-
-
-
-}
-
-cite > em{
-
-	font-family: "EB Garamond";
-	font-weight:400;
-	font-size:1.1rem;
-
-}
-
-
-aside{
-
-
-}
-
-aside > strong{
-
-
-}
-
-aside > em{
-
-	background-color:rgb(231, 141, 186);
-	color:#abf57f;
-	font-family:" Eb Garamond";
-	font-style:normal;
-
-}
-
-aside > a{
-
-
-
-}
-
-p > strong{
-
-
-
-
-
-
-
-}
-sup{
-	background-color: #F66732;
-
-	color: #E0E208
-
-
-
-}
-
-
-
-
-
-
-sup > a[href^='#']{
-
-	color: #E0E208;
-
-
-}
-
-
-.vocab{
-
-	background-color:#A9EA84;
-	color:#925A2F;
-	font-family: "IBM Plex Mono";
-	font-weight:400;
-
-
-
-}
+/* Remove details/summary styles. */
+::-webkit-details-marker { display: none }
