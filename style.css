@@ -232,7 +232,7 @@ width:60%;
 .test-column{
 	display:inline-block;
 	position:sticky;
-	top:2rem;
+	top:200px;
 	width:35%;
 	border-color: #0000FF;
 
@@ -277,6 +277,24 @@ blockquote{
 blockquote > p{
 
 font-size: 2.5rem;
+color:#0000FF;
+line-height:2.5rem;
+margin-block-end:2lh;
+
+
+}
+
+blockquote > cite{
+
+
+	font-size:1.5rem;
+	color:#0000FF;
+	border-color:#0000FF;
+	border-style:solid;
+	margin-block-end:2lh;
+	border-width:2px;
+
+
 
 
 }
