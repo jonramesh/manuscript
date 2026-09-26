@@ -379,7 +379,7 @@ blockquote > cite{
 
 .person-card{
 
-	
+
 	background : #F66732;
 	width: 38vw;
 
@@ -461,6 +461,91 @@ margin: 0;
 	line-height:1.3rem;
 
 }
+
+
+
+
+/* trying out a in house made details/summary */
+
+.module {
+
+	background:#8F4825;
+	border-radius: 1.25rem;
+	padding-block: 1rem;
+	padding-inline:1rem;
+	width: 100%;
+
+}
+
+.module-summary{
+
+
+	list-style:none;
+
+
+}
+
+.type-label{
+
+	display:inline-block;
+
+	background:#84DD77;
+
+	padding-block:.25;
+	color:#8F4825;
+
+	font-family: "IBM Plex Mono";
+	font-size:.75rem;
+	line-height:1.25;
+	text-align: center;
+	margin-block-end: .5lh;
+
+}
+
+.type-text{
+
+	color:#84DD77;
+	font-family: "IBM Plex Sans";
+	font-size:1.75rem;
+	line-height:2rem;
+	font-weight:500rem;
+	letter-spacing: -0.125;
+
+
+}
+
+.expanded{
+	background-color:#642d11;
+	padding-block:0.75rem;
+	padding-inline:1.5rem;
+	border-radius:1rem;
+	margin-block-start:2rem;
+}
+
+.expanded-source{
+
+	color:white;
+	margin-block-end: 1 rem;
+	font-family: "IBM Plex Mono";
+	font-size: 1.25rem;
+	line-height:1.5rem;
+	font-weight:400;
+
+
+}
+.expanded-description{
+
+	margins:0;
+	color: #c9bab5;
+	font-family: "IBM Plex Sans";
+	font-size:1rem;
+	line-height:1.25 rem;
+
+
+
+}
+
+
 
 
 
