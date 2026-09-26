@@ -54,7 +54,7 @@ body{
 	font-size:var(--text-article-body-paragraph);
 	line-height:1.75rem;
 	padding-inline:3.75rem;
-	padding-block-start:3.5lh;
+	padding-block-start:2lh;
 
 
 
@@ -71,7 +71,7 @@ header{
 
 
 
-	margin-block-end: 3lh;
+	margin-block-end: 10lh;
 	text-align: right;
 
 
@@ -82,7 +82,8 @@ header > h1 {
 
 	font-size: var(--text-heading-title);
 	line-height:2.75rem;
-	margin-block-end:.5lh
+	font-family: "Eb Garamond";
+
 
 
 
@@ -147,6 +148,7 @@ margin-block-end:2.25lh;
 background-color: var(--color-main);
 display:inline-block;
 color:white;
+font-family: "Inter";
 
 }
 
@@ -157,6 +159,8 @@ margin-block-end:2.25lh;
 background-color: var(--color-main);
 display:inline-block;
 color:white;
+font-family: "Ibm Plex sans";
+font-weight:600;
 
 }
 
@@ -212,18 +216,13 @@ article > section > p{
 
 
 
-article >section > section{
-
-width:60%;
-
-}
-
 
 
 
 
 .text-body{
 	display:inline-block;
+	max-width:60%
 
 
 
@@ -232,9 +231,9 @@ width:60%;
 
 .test-column{
 	display:inline-block;
-	position:sticky;
-	top:0px;
-	width:35%;
+
+	top:700px;
+	max-width:38%;
 	border-color: #0000FF;
 
 
@@ -254,6 +253,13 @@ width:60%;
 #section-heading-2 > .text-body > p{
 
 text-align:left;
+
+}
+
+.quote-body{
+
+	max-width:100%;
+
 
 }
 
@@ -284,6 +290,9 @@ display:inline-block;
 blockquote{
 
 	text-align:center;
+	padding-inline-start:4lh;
+	padding-inline-end:4lh;
+	margin-block-end:4lh;
 
 
 
@@ -297,6 +306,7 @@ font-size: 2.5rem;
 color:#0000FF;
 line-height:2.5rem;
 margin-block-end:2lh;
+font-family: "Eb Garamond";
 
 
 }
