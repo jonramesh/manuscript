@@ -247,12 +247,7 @@ article > section > p{
 
 }
 
-article > section > section {
 
-	width:60%;
-
-
-}
 
 
 
@@ -288,7 +283,7 @@ article > section > section {
 
 #section-heading-2{
 
-	text-align:right;
+
 
 
 }
@@ -301,13 +296,13 @@ text-align:left;
 
 .quote-body{
 
-	max-width:40vw;
+
 
 
 }
 aside[popover]{
 
-max-width:40vw;
+max-width:38vw;
 
 }
 
@@ -384,9 +379,9 @@ blockquote > cite{
 
 .person-card{
 
-	display:inline-block;
+	
 	background : #F66732;
-	width: 40vw;
+	width: 38vw;
 
 }
 
@@ -429,7 +424,7 @@ margin: 0;
 
 
 .vocab-card{
-	width:40vw;
+	width:38vw;
 	display:inline-block;
 	background : #8F4825;
 
