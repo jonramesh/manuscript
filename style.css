@@ -93,6 +93,7 @@ header > h1 {
 
 header > ul {
 
+	list-style:none;
 	--text-header-subtext:1rem;
 	font-size:var(--text-header-subtext);
 
@@ -237,6 +238,22 @@ width:60%;
 	border-color: #0000FF;
 
 
+
+}
+
+
+
+
+#section-heading-2{
+
+	text-align:right;
+
+
+}
+
+#section-heading-2 > .text-body > p{
+
+text-align:left;
 
 }
 
