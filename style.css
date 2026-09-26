@@ -63,7 +63,14 @@ body{
 
 
 a{
-	background-color:#0000FF;
+	background-color:#F66732;
+	font-family:"IBM plex mono";
+	color:#f3f607;
+	padding-block:.1lh;
+	padding-inline:.3lh;
+	border-radius:.5rem;
+
+
 }
 
 
@@ -93,6 +100,7 @@ header > h1 {
 
 
 
+
 }
 
 
@@ -112,6 +120,21 @@ header > ul {
 header > ul > li  {
 
 	list-style:none;
+
+
+
+
+}
+
+.author {
+
+background-color: white;
+color:black;
+
+}
+
+.vocab{
+
 
 
 
@@ -153,7 +176,10 @@ margin-block-end:2.25lh;
 background-color: var(--color-main);
 display:inline-block;
 color:white;
-font-family: "Inter";
+font-family: "Ibm Plex sans";
+font-weight:500;
+padding-block:.2lh;
+padding-inline:.3lh;
 
 }
 
@@ -165,7 +191,12 @@ background-color: var(--color-main);
 display:inline-block;
 color:white;
 font-family: "Ibm Plex sans";
-font-weight:600;
+font-weight:500;
+
+padding-block:.3lh;
+padding-inline:.3lh;
+
+
 
 }
 
@@ -332,6 +363,105 @@ blockquote > cite{
 
 
 }
+
+
+
+
+/* TRYING AN EXPERIMENTAL SETUP */
+
+
+.person-card{
+
+	display:inline-block;
+	background : #F66732;
+	width: 100%;
+
+}
+
+
+.person-card > .person-header > .person-label{
+
+
+
+
+
+}
+
+.person-card > .person-header > .person-label > p{
+display:inline-block;
+width:8rem;
+font-size:1rem;
+text-align: center;
+background:white;
+margin: 0;
+}
+
+.person-card > .persona{
+
+	font-size:1.35rem;
+	color: white;
+
+
+}
+
+.person-card > .persona-label-text{
+	font-size :1rem;
+	line-height:1.3rem;
+
+}
+
+
+
+
+/* Vocab versiom */
+
+
+.vocab-card{
+	width: 100%;
+	display:inline-block;
+	background : #8F4825;
+
+}
+
+
+.vocab-card > .vocab-header > .vocab-label{
+
+
+
+
+
+}
+
+.vocab-card  > .vocab-header > .vocab-label > p{
+display:inline-block;
+width:8rem;
+font-size:1rem;
+text-align: center;
+background:white;
+margin: 0;
+}
+
+.vocab-card > .vocab{
+
+	font-size:1.35rem;
+	color: white;
+
+
+}
+
+.vocab-card > .vocab-label-text{
+	font-size :1rem;
+	line-height:1.3rem;
+
+}
+
+
+
+
+
+
+
+
 
 
 
