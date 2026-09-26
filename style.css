@@ -55,11 +55,16 @@ body{
 	line-height:1.75rem;
 	padding-inline:3.75rem;
 	padding-block-start:2lh;
+	font-family:"Ibm plex sans"
 
 
 
 }
 
+
+a{
+	background-color:#0000FF;
+}
 
 
 
@@ -176,6 +181,7 @@ article > section> h3{
 margin-block-end:1.5lh;
 font-size:var(--text--article-body--lead);
 line-height:2.5rem;
+font-family: "Eb Garamond"
 
 }
 
@@ -320,6 +326,7 @@ blockquote > cite{
 	border-style:solid;
 	margin-block-end:2lh;
 	border-width:2px;
+	font-family:"IBM plex mono";
 
 
 
