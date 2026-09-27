@@ -15,7 +15,7 @@
 
 --color-main:#0000FF;
 
---color-page-background:#FFFFFF;
+--color-page-background:#203952;
 
 --color-text-body: #1C1B1B;
 
@@ -55,7 +55,8 @@ body{
 	line-height:1.75rem;
 	padding-inline:3.75rem;
 	padding-block-start:2lh;
-	font-family:"Ibm plex sans"
+	font-family:"Ibm plex sans";
+	color:rgb(204, 203, 203);
 
 
 
@@ -83,7 +84,7 @@ header{
 
 
 
-	margin-block-end: 10lh;
+	margin-block-end: 6lh;
 	text-align: right;
 
 
@@ -181,6 +182,8 @@ font-weight:500;
 padding-block:.2lh;
 padding-inline:.3lh;
 
+margin-block-end:7lh;
+
 }
 
 article > section > section > h2 {
@@ -195,6 +198,7 @@ font-weight:500;
 
 padding-block:.3lh;
 padding-inline:.3lh;
+margin-block-end:7lh;
 
 
 
@@ -215,19 +219,27 @@ line-height:2.5rem;
 font-family: "Eb Garamond"
 
 }
+em{
 
+	color:#FF0004;
+	font-style:italic;
+
+
+
+}
 
 
  #start{
 
 	float:left;
 	background-color:var(--color-main);
-	height:200px;
-	width:200px;
+	height:20rem;
+	width:20rem;
 	color:white;
-	font-size: 100px;
+	font-size: 16rem;
 	text-align:center;
-	line-height:200px;
+	line-height:20rem;
+	font-family:"Pirata One";
 
 
 }
@@ -260,7 +272,8 @@ article > section > p{
 
 .text-body{
 	display:inline-block;
-	max-width:60%
+	max-width:50%;
+	margin-inline-end:8%;
 
 
 
@@ -271,7 +284,7 @@ article > section > p{
 	display:inline-block;
 
 	top:700px;
-	max-width:38%;
+	width:40%;
 	border-color: #0000FF;
 
 
@@ -336,7 +349,8 @@ blockquote{
 	text-align:center;
 	padding-inline-start:4lh;
 	padding-inline-end:4lh;
-	margin-block-end:4lh;
+	margin-block-start:6lh;
+	margin-block-end:6lh;
 
 
 
@@ -347,7 +361,7 @@ blockquote{
 blockquote > p{
 
 font-size: 2.5rem;
-color:#0000FF;
+color:#FF0004;
 line-height:2.5rem;
 margin-block-end:2lh;
 font-family: "Eb Garamond";
@@ -358,13 +372,15 @@ font-family: "Eb Garamond";
 blockquote > cite{
 
 	display:inline-block;
-	font-size:1.5rem;
-	color:#0000FF;
-	border-color:#0000FF;
-	border-style:solid;
+	font-size:1.25rem;
+	color:#FF0004;
+	background-color:#fbfbfb;
+	font-weight:500;
 	margin-block-end:2lh;
 	border-width:2px;
 	font-family:"IBM plex mono";
+	padding-block:.5rem;
+	padding-inline:.5rem;
 
 
 
@@ -469,11 +485,12 @@ margin: 0;
 
 .module {
 
-	background:#8F4825;
+	background:#F66732;
 	border-radius: 1.25rem;
 	padding-block: 1rem;
 	padding-inline:1rem;
 	width: 100%;
+	margin-block-end:.5lh;
 
 }
 
@@ -489,10 +506,11 @@ margin: 0;
 
 	display:inline-block;
 
-	background:#84DD77;
+	background:#f3f607;
 
 	padding-block:.25;
-	color:#8F4825;
+	padding-inline:.25;
+	color:#F66732;
 
 	font-family: "IBM Plex Mono";
 	font-size:.75rem;
@@ -504,7 +522,7 @@ margin: 0;
 
 .type-text{
 
-	color:#84DD77;
+	color:#f3f607;
 	font-family: "IBM Plex Sans";
 	font-size:1.75rem;
 	line-height:2rem;
@@ -515,11 +533,11 @@ margin: 0;
 }
 
 .expanded{
-	background-color:#642d11;
+	background-color:#B33A0D;
 	padding-block:0.75rem;
 	padding-inline:1.5rem;
 	border-radius:1rem;
-	margin-block-start:2rem;
+	margin-block-start:1rem;
 }
 
 .expanded-source{
@@ -527,8 +545,8 @@ margin: 0;
 	color:white;
 	margin-block-end: 1 rem;
 	font-family: "IBM Plex Mono";
-	font-size: 1.25rem;
-	line-height:1.5rem;
+	font-size: 1rem;
+	line-height:1.25rem;
 	font-weight:400;
 
 
@@ -538,12 +556,98 @@ margin: 0;
 	margins:0;
 	color: #c9bab5;
 	font-family: "IBM Plex Sans";
-	font-size:1rem;
-	line-height:1.25 rem;
+	font-size:.75rem;
+	line-height:1rem;
 
 
 
 }
+
+
+
+
+
+.vocab{
+
+	background-color:#84DD77;
+	color:#642d11;
+
+
+
+
+
+}
+
+
+
+
+
+
+.vocab-module{
+
+	background:#8F4825;
+	border-radius: 1.25rem;
+	padding-block: 1rem;
+	padding-inline:1rem;
+	width: 100%;
+	margin-block-end:.5lh;
+
+
+
+
+
+
+}
+
+.vocab-label2{
+	display:inline-block;
+	background:#84DD77;
+	color:#8F4825;
+	padding-block:.25;
+	padding-inline:.25;
+
+
+	font-family: "IBM Plex Mono";
+	font-size:.75rem;
+	line-height:1.25;
+	text-align: center;
+	margin-block-end: .5lh;
+
+}
+
+
+.vocab-text2{
+
+	color:#84DD77;
+	font-family: "IBM Plex Sans";
+	font-size:1.75rem;
+	line-height:2rem;
+	font-weight:500rem;
+	letter-spacing: -0.125;
+
+
+}
+
+.vocab-expanded{
+
+	background-color:#612E15;
+	padding-block:0.75rem;
+	padding-inline:1.5rem;
+	border-radius:1rem;
+	margin-block-start:1rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
