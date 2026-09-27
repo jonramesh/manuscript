@@ -64,7 +64,7 @@ body{
 
 
 a{
-	background-color:#F66732;
+	background-color:#0000FF;
 	font-family:"IBM plex mono";
 	color:#f3f607;
 	padding-block:.1lh;
@@ -94,8 +94,10 @@ header{
 header > h1 {
 
 	font-size: var(--text-heading-title);
+	padding-inline-start:60rem;
 	line-height:2.75rem;
 	font-family: "Eb Garamond";
+	margin-block-end:.5lh;
 
 
 
@@ -125,12 +127,21 @@ header > ul > li  {
 
 
 
+
+}
+
+
+li{
+
+	margin-block-end:.25lh;
+	list-style:none;
 }
 
 .author {
 
 background-color: white;
 color:black;
+
 
 }
 
@@ -216,7 +227,7 @@ article > section> h3{
 margin-block-end:1.5lh;
 font-size:var(--text--article-body--lead);
 line-height:2.5rem;
-font-family: "Eb Garamond"
+font-family: "Instrument Serif"
 
 }
 em{
@@ -240,6 +251,9 @@ em{
 	text-align:center;
 	line-height:20rem;
 	font-family:"Pirata One";
+
+	margin-right: 1rem;
+	margin-bottom:1px;
 
 
 }
@@ -485,7 +499,7 @@ margin: 0;
 
 .module {
 
-	background:#F66732;
+	background:#0000FF;
 	border-radius: 1.25rem;
 	padding-block: 1rem;
 	padding-inline:1rem;
@@ -506,11 +520,11 @@ margin: 0;
 
 	display:inline-block;
 
-	background:#f3f607;
+	background:white;
 
 	padding-block:.25;
 	padding-inline:.25;
-	color:#F66732;
+	color:#0000FF;
 
 	font-family: "IBM Plex Mono";
 	font-size:.75rem;
@@ -522,7 +536,7 @@ margin: 0;
 
 .type-text{
 
-	color:#f3f607;
+	color:white;
 	font-family: "IBM Plex Sans";
 	font-size:1.75rem;
 	line-height:2rem;
@@ -533,7 +547,7 @@ margin: 0;
 }
 
 .expanded{
-	background-color:#B33A0D;
+	background-color:#0b0b9e;
 	padding-block:0.75rem;
 	padding-inline:1.5rem;
 	border-radius:1rem;
@@ -569,8 +583,8 @@ margin: 0;
 
 .vocab{
 
-	background-color:#84DD77;
-	color:#642d11;
+	background-color:#FF0004;
+	color:white;
 
 
 
@@ -585,7 +599,7 @@ margin: 0;
 
 .vocab-module{
 
-	background:#8F4825;
+	background:#FF0004;
 	border-radius: 1.25rem;
 	padding-block: 1rem;
 	padding-inline:1rem;
@@ -601,8 +615,8 @@ margin: 0;
 
 .vocab-label2{
 	display:inline-block;
-	background:#84DD77;
-	color:#8F4825;
+	background:white;
+	color:#FF0004;
 	padding-block:.25;
 	padding-inline:.25;
 
@@ -618,7 +632,7 @@ margin: 0;
 
 .vocab-text2{
 
-	color:#84DD77;
+	color:white;
 	font-family: "IBM Plex Sans";
 	font-size:1.75rem;
 	line-height:2rem;
