@@ -1,29 +1,44 @@
 :root {
 /* The whole system is based on the basline grid I created for me sketch. So initially thats why all the variables are filled         */
 
-
-
 --base-unit: 1rem;
-
-
-
-
 
 /* color system  */
 
-
-
---color-main:#0000FF;
-
 --color-page-background:#203952;
 
---color-text-body: #1C1B1B;
+--color-text-body: rgb(204, 203, 203);
 
 --color-text-heading: #EEEEEE;
 
 
 
+--color-main:#0000FF;
 
+
+--color-highlight-background-vocab:#FF0004;
+
+--color-highlight-backgroung-person:#0000FF;
+
+--color-highlight-text-vocab:white;
+
+--color-highlight-text-person:white;
+
+--color-vocab-card-background:#FF0004;
+
+--color-person-card-background:#0000FF;
+
+--color-person-card-text:white;
+
+--color-vocab-card-text:white;
+
+
+
+--color-quoteblock-cite-background:white;
+
+--color-quoteblock-cite-text:#FF0004;
+
+--color-quopteblock-quote-text:#FF0004;;
 
 /*type size system*/
 
@@ -37,13 +52,7 @@
 
 
 /* line height calculations */
-
-
-
 /* padding and margin*/
-
-
-
 
 }
 
@@ -99,11 +108,6 @@ header > h1 {
 	font-family: "Eb Garamond";
 	margin-block-end:.5lh;
 
-
-
-
-
-
 }
 
 
@@ -118,53 +122,20 @@ header > ul {
 }
 
 
-
-
 header > ul > li  {
-
 	list-style:none;
-
-
-
-
-
 }
 
 
 li{
-
 	margin-block-end:.25lh;
 	list-style:none;
 }
 
 .author {
-
-background-color: white;
-color:black;
-
-
+	background-color: white;
+	color:black;
 }
-
-.vocab{
-
-
-
-
-
-}
-
-
-header >ul >li > time {
-
-
-
-
-}
-
-
-
-
-
 
 
 /* article body */
@@ -251,9 +222,10 @@ em{
 	text-align:center;
 	line-height:20rem;
 	font-family:"Pirata One";
+	border-radius: .25rem;
 
-	margin-right: 1rem;
-	margin-bottom:1px;
+	margin-inline-end: 1rem;
+
 
 
 }
@@ -290,7 +262,7 @@ article > section >section > p{
 .test-column{
 	display:inline-block;
 
-	top:700px;
+
 	width:40%;
 	border-color: #0000FF;
 
@@ -336,15 +308,6 @@ max-width:38vw;
 
 
 
-/*asside*/
-#aside-text {
-/**
-max-width:30%;
-display:inline-block;
-**/
-
-}
-
 
 
 
@@ -385,7 +348,7 @@ blockquote > cite{
 	font-weight:500;
 	margin-block-end:2lh;
 	border-width:2px;
-	font-family:"IBM plex mono";
+	font-family:"Instrument Serif";
 	padding-block:.5rem;
 	padding-inline:.5rem;
 
