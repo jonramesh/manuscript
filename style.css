@@ -70,11 +70,9 @@ body{
 	padding-block-start:2lh;
 	font-family:"Ibm plex sans";
 	color:rgb(204, 203, 203);
-
-
 }
 
-/*link styles */
+/* global styles */
 
 a{
 	background-color:#0000FF;
@@ -83,22 +81,50 @@ a{
 	padding-block:.1lh;
 	padding-inline:.3lh;
 	border-radius:.5rem;
+}
+
+em{
+
+	color:#FF0004;
+	font-style:italic;
+}
+
+h2{
+
+	font-size:var(--text-heading-one);
+	margin-block-end:2.25lh;
+	background-color: var(--color-main);
+	display:inline-block;
+	color:white;
+	font-family: "Ibm Plex sans";
+	font-weight:500;
+	padding-block:.2lh;
+	padding-inline:.3lh;
+	margin-block-end:7lh;
+}
+
+blockquote{
+
+	text-align:center;
+	padding-inline-start:4lh;
+	padding-inline-end:4lh;
+	margin-block-start:6lh;
+	margin-block-end:6lh;
+
+
+
 
 
 }
 
-/*  Begining of HEADER */
 header{
-
-
-
 
 	margin-block-end: 6lh;
 	text-align: right;
-
-
-
 }
+
+/*  Begining of HEADER */
+
 
 header > h1 {
 
@@ -107,7 +133,6 @@ header > h1 {
 	line-height:2.75rem;
 	font-family: "Eb Garamond";
 	margin-block-end:.5lh;
-
 }
 
 
@@ -116,9 +141,6 @@ header > time {
 
 	font-size:var(--text-header-subtext);
 	margin-block-end:.25lh;
-
-
-
 }
 
 header > p {
@@ -131,14 +153,361 @@ header > p > a {
 
 	background-color:white;
 	color:black;
-
-
 }
 
 /*Ending of Header */
 
 
 /*article body*/
+
+
+
+
+
+
+/*article body end */
+
+article{
+
+	margin-block-end:4lh;
+}
+
+
+
+
+article > section{
+
+	margin-block-end:1.5lh;
+}
+
+.intro-paragraph{
+
+	margin-block-end:1.5lh;
+	font-size:var(--text--article-body--lead);
+	line-height:2.5rem;
+	font-family: "Instrument Serif"
+}
+
+
+
+.start{
+
+	float:left;
+	background-color:var(--color-main);
+	height:20rem;
+	width:20rem;
+	color:white;
+	font-size: 16rem;
+	text-align:center;
+	line-height:20rem;
+	font-family:"Pirata One";
+	border-radius: .25rem;
+	margin-inline-end: 1rem;
+}
+
+article > section > section{
+
+	margin-block-end:1.5lh;
+}
+
+article >section > section > p {
+
+	margin-block-end:1.5lh;
+}
+
+/* article >  article body */
+
+
+.text-body{
+
+	display:inline-block;
+	max-width:50%;
+	margin-inline-end:8%;
+}
+
+.test-column{
+	display:inline-block;
+	width:40%;
+	border-color: #0000FF;
+}
+
+/* article > article body > call out modules*/
+
+/* figure modules */
+
+.module {
+
+	background:#0000FF;
+	border-radius: 1.25rem;
+	padding-block: 1rem;
+	padding-inline:1rem;
+	width: 100%;
+	margin-block-end:.5lh;
+
+}
+
+.module-summary{
+
+	list-style:none;
+}
+
+.type-label{
+
+	display:inline-block;
+	background:white;
+	padding-block:.25;
+	padding-inline:.25;
+	color:#0000FF;
+	font-family: "IBM Plex Mono";
+	font-size:.75rem;
+	line-height:1.25;
+	text-align: center;
+	margin-block-end: .5lh;
+
+}
+
+.type-text{
+
+	color:white;
+	font-family: "IBM Plex Sans";
+	font-size:1.75rem;
+	line-height:2rem;
+	font-weight:500rem;
+	letter-spacing: -0.125;
+
+
+}
+
+.expanded{
+
+	background-color:#0b0b9e;
+	padding-block:0.75rem;
+	padding-inline:1.5rem;
+	border-radius:1rem;
+	margin-block-start:1rem;
+}
+
+.expanded-source{
+
+	color:white;
+	margin-block-end: 1 rem;
+	font-family: "IBM Plex Mono";
+	font-size: 1rem;
+	line-height:1.25rem;
+	font-weight:400;
+
+
+}
+.expanded-description{
+
+	margins:0;
+	color: #c9bab5;
+	font-family: "IBM Plex Sans";
+	font-size:.75rem;
+	line-height:1rem;
+
+
+
+}
+
+
+
+/* vocab modules */
+
+.vocab{
+
+	background-color:#FF0004;
+	color:white;
+	border-radius:.5rem;
+	padding-block:.1lh;
+	padding-inline:.3lh;
+}
+
+
+.vocab-module{
+
+	background:#FF0004;
+	border-radius: 1.25rem;
+	padding-block: 1rem;
+	padding-inline:1rem;
+	width: 100%;
+	margin-block-end:.5lh;
+
+
+
+
+
+
+}
+
+.vocab-label2{
+
+	display:inline-block;
+	background:white;
+	color:#FF0004;
+	padding-block:.25;
+	padding-inline:.25;
+
+
+	font-family: "IBM Plex Mono";
+	font-size:.75rem;
+	line-height:1.25;
+	text-align: center;
+	margin-block-end: .5lh;
+
+}
+
+
+.vocab-text2{
+
+	color:white;
+	font-family: "IBM Plex Sans";
+	font-size:1.75rem;
+	line-height:2rem;
+	font-weight:500rem;
+	letter-spacing: -0.125;
+
+
+}
+
+.vocab-expanded{
+
+	background-color:#612E15;
+	padding-block:0.75rem;
+	padding-inline:1.5rem;
+	border-radius:1rem;
+	margin-block-start:1rem;
+
+}
+
+/* end of vocab and figure module */
+
+/* article body > Quoteblocks */
+
+
+blockquote > p{
+
+font-size: 2.5rem;
+color:#FF0004;
+line-height:2.5rem;
+margin-block-end:2lh;
+font-family: "Eb Garamond";
+
+
+}
+
+blockquote > cite{
+
+	display:inline-block;
+	font-size:1.25rem;
+	color:#FF0004;
+	background-color:#fbfbfb;
+	font-weight:500;
+	margin-block-end:2lh;
+	font-family:"Instrument Serif";
+	padding-block:.5rem;
+	padding-inline:.5rem;
+
+
+
+
+}
+
+
+
+/* end of quoteblocks */
+
+
+/* Footer Bibliography original article */
+
+footer > section > ol > li {
+
+	margin-block-end:.5lh;
+
+
+
+
+
+}
+
+h6{
+
+	font-weight:600;
+	color:white;
+
+}
+
+/* End of Footer Bibliography original article */
+
+/* Footer Bibliography My response */
+
+#response-footer{
+
+	text-align: center;
+
+}
+
+#response-footer > a{
+
+	display:inline-block;
+	background: transparent;
+	color:white;
+	text-decoration:underline;
+	margin-block-end:.5lh;
+
+}
+
+#response-footer > p{
+
+
+	font-size:.75rem;
+
+
+}
+
+button{
+	margin-block-start:1.25rem;
+	background-color:#FF0004;
+	color:white;
+	padding-block:.5lh;
+	padding-inline:.5lh;
+	border-radius:.5rem;
+
+}
+
+/* End of Footer Bibliography My response */
+
+
+/* end of Bibliography */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
