@@ -110,7 +110,7 @@ em{
 }
 
 h2{
-	--space-heading-bottom: calc(--var(--base-unit) * 1.5);
+	--space-heading-bottom: calc(var(--base-unit) * 1.5);
 	font-size:var(--text-heading-one);
 	margin-block-end:2.25lh;
 	background-color: var(--color-main);
@@ -120,7 +120,7 @@ h2{
 	font-weight:500;
 	padding-block:.2lh;
 	padding-inline:.3lh;
-	margin-block-end:7lh;
+	margin-block-end:var(--space-heading-bottom);
 }
 
 blockquote{
@@ -355,7 +355,7 @@ article >section > section > p {
 	padding-block: 1rem;
 	padding-inline:1rem;
 	width: 100%;
-	margin-block-end:.5lh;
+	margin-block-end:var(--space-module-bottom);
 
 
 
@@ -377,7 +377,7 @@ article >section > section > p {
 	font-size:.75rem;
 	line-height:1.25;
 	text-align: center;
-	margin-block-end: .5lh;
+	margin-block-end: var(--space-label-bottom);
 
 }
 
@@ -395,7 +395,7 @@ article >section > section > p {
 }
 
 .vocab-expanded{
-	--space-panel-top: calc(var(--base-unit))
+	--space-panel-top: calc(var(--base-unit));
 	background-color:#612E15;
 	padding-block:0.75rem;
 	padding-inline:1.5rem;
