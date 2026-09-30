@@ -3,6 +3,21 @@
 
 --base-unit: 1rem;
 
+/*vertical Spacing*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* color system  */
 
 --color-page-background:#203952;
@@ -63,9 +78,14 @@
 /* The body element where all the amin styles are captured.   */
 body{
 
+	/* spacing */
+	--space-page-top: calc(var(--base-unit) * 3);
+
+
+
 	background-color: var(--color-page-background);
 	font-size:var(--text-article-body-paragraph);
-	line-height:1.75rem;
+	line-height:var(--space-page-top);
 	padding-inline:3.75rem;
 	padding-block-start:2lh;
 	font-family:"IBM plex sans";
@@ -104,7 +124,8 @@ h2{
 }
 
 blockquote{
-
+	--space-quote-top: calc(var(--base-unit) * 10);
+	--space-quote-bottom: calc(var(--base-unit) * 10);
 	text-align:center;
 	padding-inline-start:4lh;
 	padding-inline-end:4lh;
@@ -119,6 +140,7 @@ blockquote{
 
 header{
 
+	--space-header-bottom: calc(var(--base-unit)* 10);
 	margin-block-end: 6lh;
 	text-align: right;
 }
@@ -128,25 +150,27 @@ header{
 
 header > h1 {
 
+	--space-heading1-bottom: calc(var(--base-unit) * 1.5);
 	font-size: var(--text-heading-title);
 	padding-inline-start:60rem;
 	line-height:2.75rem;
 	font-family: "Eb Garamond";
-	margin-block-end:.5lh;
+	margin-block-end:var(--space-heading1-bottom);
 }
 
 
 
 header > time {
 
+	--space-time-bottom: calc(var(--base-unit) * .5);
 	font-size:var(--text-header-subtext);
-	margin-block-end:.25lh;
+	margin-block-end:var(--space-time-bottom);
 }
 
 header > p {
 
-
-	margin-block-end:.25lh;
+	--space-author-bottom: calc(var(--base-unit) * .5);
+	margin-block-end:var(--space-author-bottom);
 }
 
 header > p > a {
@@ -168,7 +192,7 @@ header > p > a {
 /*article body end */
 
 article{
-
+	--space-article-bottom: calc(var(--base-unit)* 8)
 	margin-block-end:4lh;
 }
 
@@ -176,13 +200,13 @@ article{
 
 
 article > section{
-
-	margin-block-end:1.5lh;
+	--space-article-section-bottom: calc(var(--base-unit) * 4)
+	margin-block-end: var(--space-article-section-bottom);
 }
 
 .intro-paragraph{
-
-	margin-block-end:1.5lh;
+	--space-intro-bottom: calc(var(--base-unit)*4);
+	margin-block-end:var(--space-intro-bottom);
 	font-size:var(--text--article-body--lead);
 	line-height:2.5rem;
 	font-family: "Instrument Serif"
@@ -206,13 +230,13 @@ article > section{
 }
 
 article > section > section{
-
-	margin-block-end:1.5lh;
+	--space-subsection-bottom: calc(var(--base-unit) * 3);
+	margin-block-end:var(--space-subsection-bottom);
 }
 
 article >section > section > p {
-
-	margin-block-end:1.5lh;
+	--space-paragraph-bottom: calc(var(--base-unit) * 2.5);
+	margin-block-end:var(--space-paragraph-bottom);
 }
 
 /* article >  article body */
@@ -236,13 +260,13 @@ article >section > section > p {
 /* figure modules */
 
 .module {
-
+	--space-module-bottom: calc(var(--base-unit));
 	background:#0000FF;
 	border-radius: 1.25rem;
 	padding-block: 1rem;
 	padding-inline:1rem;
 	width: 100%;
-	margin-block-end:.5lh;
+	margin-block-end:var(--space-module-bottom);
 
 }
 
@@ -252,7 +276,7 @@ article >section > section > p {
 }
 
 .type-label{
-
+	--space-label-bottom:calc(var(--base-unit) * 0.5);
 	display:inline-block;
 	background:white;
 	padding-block:.25;
@@ -279,18 +303,18 @@ article >section > section > p {
 }
 
 .expanded{
-
+	--space-panel-top: calc(var(--base-unit));
 	background-color:#0b0b9e;
 	padding-block:0.75rem;
 	padding-inline:1.5rem;
 	border-radius:1rem;
-	margin-block-start:1rem;
+	margin-block-start:var(--space-panel-top);
 }
 
 .expanded-source{
-
+	--space-source-bottom: calc(var(--base-unit))
 	color:white;
-	margin-block-end: 1 rem;
+	margin-block-end: var(--space-source-bottom);
 	font-family: "IBM Plex Mono";
 	font-size: 1rem;
 	line-height:1.25rem;
@@ -387,10 +411,12 @@ article >section > section > p {
 
 blockquote > p{
 
+
+--space-quote-text-bottom: calc(var(--base-unit) * 4);
 font-size: 2.5rem;
 color:#FF0004;
 line-height:2.5rem;
-margin-block-end:2lh;
+margin-block-end:var(--space-quote-text-bottom);
 font-family: "Eb Garamond";
 
 
@@ -403,7 +429,6 @@ blockquote > cite{
 	color:#FF0004;
 	background-color:#fbfbfb;
 	font-weight:500;
-	margin-block-end:2lh;
 	font-family:"Instrument Serif";
 	padding-block:.5rem;
 	padding-inline:.5rem;
