@@ -85,9 +85,9 @@ body{
 
 	background-color: var(--color-page-background);
 	font-size:var(--text-article-body-paragraph);
-	line-height:var(--space-page-top);
-	padding-inline:3.75rem;
-	padding-block-start:2lh;
+	line-height:1.75rem;
+	padding-inline:2lh;
+	padding-block-start:var(--space-page-top);
 	font-family:"IBM plex sans";
 	color:rgb(204, 203, 203);
 }
@@ -110,7 +110,7 @@ em{
 }
 
 h2{
-
+	--space-heading-bottom: calc(--var(--base-unit) * 1.5);
 	font-size:var(--text-heading-one);
 	margin-block-end:2.25lh;
 	background-color: var(--color-main);
@@ -129,8 +129,8 @@ blockquote{
 	text-align:center;
 	padding-inline-start:4lh;
 	padding-inline-end:4lh;
-	margin-block-start:6lh;
-	margin-block-end:6lh;
+	margin-block-start:var(--space-quote-top);
+	margin-block-end:var(--space-quote-bottom);
 
 
 
@@ -141,7 +141,7 @@ blockquote{
 header{
 
 	--space-header-bottom: calc(var(--base-unit)* 10);
-	margin-block-end: 6lh;
+	margin-block-end:var(--space-header-bottom) ;
 	text-align: right;
 }
 
@@ -192,15 +192,15 @@ header > p > a {
 /*article body end */
 
 article{
-	--space-article-bottom: calc(var(--base-unit)* 8)
-	margin-block-end:4lh;
+	--space-article-bottom: calc(var(--base-unit)* 8);
+	margin-block-end:var(--space-article-bottom);
 }
 
 
 
 
 article > section{
-	--space-article-section-bottom: calc(var(--base-unit) * 4)
+	--space-article-section-bottom: calc(var(--base-unit) * 4);
 	margin-block-end: var(--space-article-section-bottom);
 }
 
@@ -286,7 +286,7 @@ article >section > section > p {
 	font-size:.75rem;
 	line-height:1.25;
 	text-align: center;
-	margin-block-end: .5lh;
+	margin-block-end: var(--space-label-bottom);
 
 }
 
@@ -312,7 +312,7 @@ article >section > section > p {
 }
 
 .expanded-source{
-	--space-source-bottom: calc(var(--base-unit))
+	--space-source-bottom: calc(var(--base-unit));
 	color:white;
 	margin-block-end: var(--space-source-bottom);
 	font-family: "IBM Plex Mono";
@@ -324,7 +324,7 @@ article >section > section > p {
 }
 .expanded-description{
 
-	margins:0;
+
 	color: #c9bab5;
 	font-family: "IBM Plex Sans";
 	font-size:.75rem;
@@ -349,7 +349,7 @@ article >section > section > p {
 
 
 .vocab-module{
-
+	--space-module-bottom: calc(var(--base-unit) * 1);
 	background:#FF0004;
 	border-radius: 1.25rem;
 	padding-block: 1rem;
@@ -365,7 +365,7 @@ article >section > section > p {
 }
 
 .vocab-label2{
-
+	--space-label-bottom: calc(var(--base-unit) * .5);
 	display:inline-block;
 	background:white;
 	color:#FF0004;
@@ -395,12 +395,12 @@ article >section > section > p {
 }
 
 .vocab-expanded{
-
+	--space-panel-top: calc(var(--base-unit))
 	background-color:#612E15;
 	padding-block:0.75rem;
 	padding-inline:1.5rem;
 	border-radius:1rem;
-	margin-block-start:1rem;
+	margin-block-start:var(--space-panel-top);
 
 }
 
@@ -446,8 +446,8 @@ blockquote > cite{
 /* Footer Bibliography original article */
 
 footer > section > ol > li {
-
-	margin-block-end:.5lh;
+	--space-footer-citation-bottom: calc(var(--base-unit));
+	margin-block-end:var(--space-footer-citation-bottom);
 
 
 
@@ -473,12 +473,12 @@ h6{
 }
 
 #response-footer > a{
-
+	--space-footer-link-bottom: calc(var(--base-unit));
 	display:inline-block;
 	background: transparent;
 	color:white;
 	text-decoration:underline;
-	margin-block-end:.5lh;
+	margin-block-end:var(--space-footer-link-bottom);
 
 }
 
@@ -491,7 +491,8 @@ h6{
 }
 
 button{
-	margin-block-start:1.25rem;
+	--space-button-top:calc(var(--base-unit) * 1.5);
+	margin-block-start:var(--space-button-top);
 	background-color:#FF0004;
 	color:white;
 	padding-block:.5lh;
