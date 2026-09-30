@@ -3,20 +3,11 @@
 
 --base-unit: 1rem;
 
-/*vertical Spacing*/
+/*font weight*/
 
-
-
-
-
-
-
-
-
-
-
-
-
+--weight-regular: 400;
+--weght-medium: 500;
+--weight-bold:600;
 
 /* color system  */
 
@@ -73,6 +64,8 @@
 /* line height calculations */
 /* padding and margin*/
 
+
+
 }
 
 /* The body element where all the amin styles are captured.   */
@@ -95,11 +88,13 @@ body{
 /* global styles */
 
 a{
+	--space-link-padding-block: calc(var(--base-unit) * .25);
+	--space-link-padding-inline:calc(var(--base-unit) * .5 )
 	background-color:#0000FF;
 	font-family:"IBM plex mono";
 	color:#f3f607;
-	padding-block:.1lh;
-	padding-inline:.3lh;
+	padding-block:var(--space-link-padding-block);
+	padding-inline:var(--space-link-padding-inline);
 	border-radius:.5rem;
 }
 
@@ -112,7 +107,6 @@ em{
 h2{
 	--space-heading-bottom: calc(var(--base-unit) * 1.5);
 	font-size:var(--text-heading-one);
-	margin-block-end:2.25lh;
 	background-color: var(--color-main);
 	display:inline-block;
 	color:white;
@@ -339,7 +333,8 @@ article >section > section > p {
 /* vocab modules */
 
 .vocab{
-
+	--space-vocab-padding-block: calc(var(--base-unit) * .25);
+	--space-vocab-padding-inline: calc(var(--base-unit) * .5);
 	background-color:#FF0004;
 	color:white;
 	border-radius:.5rem;
