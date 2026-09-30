@@ -68,7 +68,7 @@ body{
 	line-height:1.75rem;
 	padding-inline:3.75rem;
 	padding-block-start:2lh;
-	font-family:"Ibm plex sans";
+	font-family:"IBM plex sans";
 	color:rgb(204, 203, 203);
 }
 
@@ -96,7 +96,7 @@ h2{
 	background-color: var(--color-main);
 	display:inline-block;
 	color:white;
-	font-family: "Ibm Plex sans";
+	font-family: "IBM Plex sans";
 	font-weight:500;
 	padding-block:.2lh;
 	padding-inline:.3lh;
