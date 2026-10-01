@@ -524,7 +524,7 @@ article >section > section > p {
 
 	background-color:var(--color-vocab-panel);
 	padding-block:var(--space-panel-padding-block);
-	padding-inline:(var(--space-panel-padding-inline));
+	padding-inline:var(--space-panel-padding-inline);
 	border-radius:var(--radius-panel);
 	margin-block-start:var(--space-panel-top);
 
@@ -570,7 +570,7 @@ blockquote > cite{
 
 /* Footer Bibliography original article */
 
-footer  > li {
+footer   li {
 
 	margin-block-end:var(--space-footer-citation-bottom);
 
