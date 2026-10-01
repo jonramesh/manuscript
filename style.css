@@ -6,14 +6,14 @@
 /*font weight*/
 
 --weight-regular: 400;
---weght-medium: 500;
+--weight-medium: 500;
 --weight-bold:600;
 
 /* color system  */
 
 
 
---color-footer-text:#203952;
+--color-page-background:#203952;
 --color-text-body:#CCCBCB;
 
 --color-link-background:#0000FF;
@@ -48,57 +48,51 @@
 --color-button-background:#FF0004;
 --color-button-text:white;
 
+--color-accent-background::#0000FF;
+--color-accet-text:white;
+
 /*font families */
 
 --font-sans-body: "IBM Plex Sans", Arial, sans-serif;
 --font-mono: "IBM Plex Mono", "Courier New",monospace;
---font-grarmond: "EB Garamond", Georgia,serif;
+--font-gararmond: "EB Garamond", Georgia,serif;
 --font-instrument: "Instrument Serif", Georgia, Serif;
---font-start: "Pirate One", Times new Rome, Serif;
+--font-start: "Pirata One", Times New Roman, Serif;
 
 
 
 
---radius-chip: calc(var(--space-chip-padding-iline) * 1);
+--radius-chip: calc(var(--space-chip-padding-inline) * 1);
 --radius-button: calc(var(--radius-chip) * 1);
---radius-module: calc(var(--space-module-paddig) * 1.25);
---radiu-pae: calc(var(--space-module-paddig) * 1);
+--radius-module: calc(var(--space-module-padding) * 1.25);
+--radiu-panel: calc(var(--space-module-padding) * 1);
 
 
 /* measure line length */
 
 --measure-body: 55ch;
 --measure-title: 20ch;
---measure-quote: 55ch;
+--measure-quote: var(--measure-body);
 
 
 
 
-/*type size system*/
-
---text-heading-title:2.5rem ;
---text-article-body-paragraph: 1.25rem;
---text--article-body--lead:2.5rem;
---text-article-body-pullquote:4.5;
---text-heading-one: 1.5rem;
-
---text-quoteblock-quote:2.5rem;
-
---text-header-subtext:1rem;
 
 
-/* line height calculations */
+
+
+
 
 
 /*Margin */
 
 --space-paragraph-bottom: calc(var(--base-unit) * 2.5);
---space-headig-bottom: calc(var(--space-paragraph-bottom) * 0.5);
+--space-heading-bottom: calc(var(--space-paragraph-bottom) * 0.5);
 --space-quote-text-bottom: calc(var(--space-heading-bottom) * 1);
 --space-subsection-bottom: calc(var(--space-paragraph-bottom) * 1.5);
 --space-article-section-bottom: calc(var(--space-paragraph-bottom) * 2);
 --space-intro-bottom: calc(var(--space-article-section-bottom)* 1);
---space-quote-top: calc(var(--space-article-section-bottom) * 1);
+--space-quote-top: calc(var(--space-article-section-bottom) * 2);
 --space-quote-bottom: calc(var(--space-quote-top) * 1);
 --space-article-bottom: calc(var(--space-quote-top) * 1.5);
 
@@ -106,7 +100,6 @@
 
 --space-heading1-bottom: calc(var(--space-heading-bottom) * 1);
 --space-author-bottom: calc(var(--space-heading1-bottom) * 0.4);
---space-time-bottom: calc(var(--space-author-bottom) * 1);
 --space-page-top: calc(var(--space-heading1-bottom) * 3);
 --space-header-bottom: calc(var(--space-quote-top) * 1);
 
@@ -116,7 +109,7 @@
 /* padding */
 
 --space-chip-padding-block: calc(var(--space-paragraph-bottom) * 0.1);
---space-chip-padding-inline: calc(var(--space-chip-padding-block)0.2);
+--space-chip-padding-inline: calc(var(--space-chip-padding-block) * 2);
 
 
 /*Button  */
@@ -126,12 +119,56 @@
 
 
 --space-module-padding: calc(var(--space-paragraph-bottom) * 0.4);
---space-pael-padding-block: calc(var(--space-module-padding) * .75);
---space-pael-paddig-inline: calc(var(--space-module-padding) * 1.5);
+--space-panel-padding-block: calc(var(--space-module-padding) * .75);
+--space-panel-paddig-inline: calc(var(--space-module-padding) * 1.5);
 
 
---space-page-iline: calc(var(--space-subsection-bottom) * 1);
---space-quote-paddig-inline: calc(var(--space-article-section-bottom) * 1.5);
+--space-page-inline: calc(var(--space-subsection-bottom) * 1);
+--space-quote-padding-inline: calc(var(--space-article-section-bottom) * 1.5);
+
+
+/* layout columns */
+
+--column-text: 50%;
+--colum-side: calc(var(--column-text) * 0.8);
+--colum-gap: calc(var(--column-text) * 0.16);
+/*type system a 1.25 ratio, which should be close to a 4px grid */
+
+
+--type-grid: calc(var(--base-unit) * 0.25);
+
+/*sizes */
+
+--text-xs: calc(var(--type-grid) * 3);
+--text-s: calc(var(--type-grid) * 4);
+--text-m: calc(var(--type-grid) * 5);
+--text-l: calc(var(--type-grid) * 6);
+--text-sxl: calc(var(--type-grid) * 10);
+
+/* types */
+
+--text-article-body-paragraph: var(--text-m);
+--text-header-subtext: var(--text-s);
+--text-heading-title: var(--text-2xl);
+--text-article-body-lead: var(--text-2xl);
+--text-heading-one:var(--text-1);
+--text-quoteblock-quote: var(--text-2xl);
+--text-module: var(--text-1);
+--text-label: var(--text-xs);
+--text-source: var(--text-s);
+--text-description: var(--text-xs);
+--text-cite: var(--text-m);
+--text-footnote:var(--text-xs);
+--text-dropcap: calc(var(--text-articlebody-lead * 6.4));
+
+--leading-xs: calc(var(--type-grid) * 4);
+--leading-s: calc(var(--type-grid) * 6);
+--leading-m: calc(var(--type-grid)* 7);
+--leading-l: calc(var(--type-grid) * 11);
+--leading-2xl: calc(var(--type-grid) * 11)
+
+
+
 
 
 
@@ -149,50 +186,50 @@ body{
 
 	background-color: var(--color-page-background);
 	font-size:var(--text-article-body-paragraph);
-	line-height:1.75rem;
+	line-height: var(--leading-m);
 	padding-inline:var(--space-page-inline);
 	padding-block-start:var(--space-page-top);
-	font-family:"IBM plex sans";
-	color:rgb(204, 203, 203);
+	font-family:var(--font-sans-body);
+	color:var(--color-text-body);
 }
 
 /* global styles */
 
 a{
 
-	background-color:#0000FF;
-	font-family:"IBM plex mono";
-	color:#f3f607;
+	background-color:var(--color-link-background);
+	font-family:var(--font-mono);
+	color:var(--color-link-text);
 	padding-block:var(--space-chip-padding-block);
 	padding-inline:var(--space-chip-padding-inline);
-	border-radius:.5rem;
+	border-radius:var(--radius-chip);
 }
 
 em{
 
-	color:#FF0004;
+	color:var(--color-emphasis);
 	font-style:italic;
 }
 
 h2{
 	--space-heading-bottom: calc(var(--space-paragraph-bottom) * .5);
 	font-size:var(--text-heading-one);
-	background-color: var(--color-main);
+	background-color: var(--color-accent-background);
 	display:inline-block;
-	color:white;
-	font-family: "IBM Plex sans";
-	font-weight:500;
+	color:var(--color-accet-text);
+	font-weight:var(--weight-medium);
 	padding-block:var(--space-chip-padding-block);
 	padding-inline:var(--space-chip-padding-inline);
 	margin-block-end:var(--space-heading-bottom);
+	line-height:var(--leading-1)
 }
 
 blockquote{
 	--space-quote-top: calc(var(--space-article-sectio-bottom) * 2);
 	--space-quote-bottom: calc(var(--space-quote-top) * 1);
 	text-align:center;
-	padding-inline-start:var(--space-quote-padding-iline);
-	padding-inline-end:var(--space-quote-paddig-inline);
+	padding-inline-start:var(--space-quote-padding-inline);
+	padding-inline-end:var(--space-quote-padding-inline);
 	padding-inline-end:4lh;
 	margin-block-start:var(--space-quote-top);
 	margin-block-end:var(--space-quote-bottom);
@@ -207,7 +244,7 @@ header{
 
 	--space-header-bottom: calc(var(--base-unit)* 10);
 	margin-block-end:var(--space-header-bottom) ;
-	text-align: right;
+	text-align:end;
 }
 
 /*  Begining of HEADER */
@@ -217,9 +254,10 @@ header > h1 {
 
 	--space-heading1-bottom: calc(var(--space-heading-bottom) * 1);
 	font-size: var(--text-heading-title);
-	padding-inline-start:60rem;
-	line-height:2.75rem;
-	font-family: "Eb Garamond";
+	max-inline-size: var(--measure-title);
+	margin-inline: auto;
+	line-height:var(--leading-2xl);
+	font-family: var(--font-gararmond);
 	margin-block-end:var(--space-heading1-bottom);
 }
 
@@ -230,6 +268,7 @@ header > time {
 	--space-time-bottom: calc(var(--space-author-bottom) * 1);
 	font-size:var(--text-header-subtext);
 	margin-block-end:var(--space-time-bottom);
+	line-height: var(--leading-s);
 }
 
 header > p {
@@ -240,8 +279,8 @@ header > p {
 
 header > p > a {
 
-	background-color:white;
-	color:black;
+	background-color:var(--color-author-background);
+	color:var(--color-author-text);
 }
 
 /*Ending of Header */
@@ -257,7 +296,6 @@ header > p > a {
 /*article body end */
 
 article{
-	--space-article-bottom: calc(var(--space-quote-top) * 1.5);
 	margin-block-end:var(--space-article-bottom);
 }
 
@@ -265,33 +303,31 @@ article{
 
 
 article > section{
-	--space-article-section-bottom: calc(var(--space-paragraph-bottom) * 2);
 	margin-block-end: var(--space-article-section-bottom);
 }
 
 .intro-paragraph{
-	--space-intro-bottom: calc(var(--space-article-section-bottom)*1);
 	margin-block-end:var(--space-intro-bottom);
-	font-size:var(--text--article-body--lead);
-	line-height:2.5rem;
-	font-family: "Instrument Serif"
+	font-size:var(--text-article-body-lead);
+	line-height:var(--leading-2xl);
+	font-family: var(--font-intrument);
 }
 
 
 
-.start{
+.dropcap{
 
-	float:left;
-	background-color:var(--color-main);
-	height:20rem;
-	width:20rem;
-	color:white;
-	font-size: 16rem;
+	float:inline-start;
+	background-color:var(--color-accent-background);
+	height:var(--size-dropcap);
+	width:var(--size-dropcap);
+	color:var(--color-accent-text);
+	font-size: var(--text-start);
 	text-align:center;
-	line-height:20rem;
-	font-family:"Pirata One";
+	line-height:var(--size-dropcap);;
+	font-family:var(--font-start);
 	border-radius: .25rem;
-	margin-inline-end: 1rem;
+	margin-inline-end: var(--space-module-padding);
 }
 
 article > section > section{
@@ -314,23 +350,22 @@ article >section > section > p {
 	margin-inline-end:8%;
 }
 
-.test-column{
+.sidebar{
 	display:inline-block;
 	width:40%;
-	border-color: #0000FF;
+
 }
 
 /* article > article body > call out modules*/
 
 /* figure modules */
 
-.module {
+.figure-module {
 	--space-module-bottom: calc(var(--base-unit));
-	background:#0000FF;
-	border-radius: 1.25rem;
+	background:var(--color-figure-background);
+	border-radius: var(--radius-module);
 	padding-block: var(--space-module-padding);
 	padding-inline:var(--space-module-padding);
-	width: 100%;
 	margin-block-end:var(--space-module-bottom);
 
 }
@@ -339,61 +374,74 @@ article >section > section > p {
 
 	list-style:none;
 }
+.figure-module:hover{
 
-.type-label{
+	background-color: var(--color-figure-panel);
+}
+
+.vocab-module:hover{
+
+	background-color:var(--color-vocab-panel);
+}
+
+
+
+
+
+
+
+.figure-label{
 	--space-label-bottom:calc(var(--base-unit) * 0.5);
 	display:inline-block;
-	background:white;
+	background-color:var(--color-figure-background);
 	padding-block:var(--space-chip-paddig-block);
 	padding-inline:var(--space-chip-padding-inline);
-	color:#0000FF;
-	font-family: "IBM Plex Mono";
-	font-size:.75rem;
-	line-height:1.25;
+	color:var(--color-figure-text);
+	font-family: var(--font-mono);
+	font-size:var(--text-label);
+	line-height:var(--leading-xs);
 	text-align: center;
 	margin-block-end: var(--space-label-bottom);
 
 }
 
-.type-text{
+.figure-name{
 
-	color:white;
-	font-family: "IBM Plex Sans";
-	font-size:1.75rem;
-	line-height:2rem;
-	font-weight:500rem;
+	color:var(--color-figure-text);
+	font-size:var(--text-module);
+	line-height:var(--leading-1);
+	font-weight:var(--weight-medium);
 	letter-spacing: -0.125;
 
 
 }
 
-.expanded{
+.figure-panel{
 	--space-panel-top: calc(var(--base-unit));
-	background-color:#0b0b9e;
-	padding-block:var(--space-pael-padding-block);
-	padding-inline:var(--space-pael-paddig-inline);
-	border-radius:1rem;
+	background-color:var(--color-figure-panel);
+	padding-block:var(--space-panel-padding-block);
+	padding-inline:var(--space-panel-paddig-inline);
+	border-radius:var(--radius-panel);
 	margin-block-start:var(--space-panel-top);
 }
 
-.expanded-source{
+.panel-source{
 	--space-source-bottom: calc(var(--base-unit));
-	color:white;
+	color:var(--color-figure-text);
 	margin-block-end: var(--space-source-bottom);
-	font-family: "IBM Plex Mono";
-	font-size: 1rem;
-	line-height:1.25rem;
-	font-weight:400;
+	font-family: var(--font-mono);
+	font-size:var(--text-source) ;
+	line-height:var(--leading-s);
+	font-weight:var(--weight-regular);
 
 
 }
-.expanded-description{
+.panel-description{
 
 
-	color: #c9bab5;
-	font-family: "IBM Plex Sans";
-	font-size:.75rem;
-	line-height:1rem;
+	color: var(--color-panel-description);
+	font-size:var(--text-description);
+	line-height:var(--leading-xs);
 
 
 
@@ -405,9 +453,9 @@ article >section > section > p {
 
 .vocab{
 
-	background-color:#FF0004;
-	color:white;
-	border-radius:.5rem;
+	background-color:var(--color-vocab-background);
+	color:var(--color-vocab-text);
+	border-radius:var(--radius-chip);
 	padding-block:var(--space-chip-padding-block);
 	padding-inline:var(--space-chip-padding-inline);
 }
@@ -415,11 +463,10 @@ article >section > section > p {
 
 .vocab-module{
 	--space-module-bottom: calc(var(--base-unit) * 1);
-	background:#FF0004;
-	border-radius: 1.25rem;
+	background:var(--color-vocab-background);
+	border-radius: var(--radius-module);
 	padding-block: var(--space-module-padding);
 	padding-inline:var(--space-module-padding);
-	width: 100%;
 	margin-block-end:var(--space-module-bottom);
 
 
@@ -429,42 +476,40 @@ article >section > section > p {
 
 }
 
-.vocab-label2{
-	--space-label-bottom: calc(var(--base-unit) * .5);
+.vocab-label{
 	display:inline-block;
-	background:white;
-	color:#FF0004;
+	background:var(--color-vocab-label-background);
+	color:var(--color-vocab-label-text);
 	padding-block:var(--space-chip-padding-block);
 	padding-inline:var(--space-chip-padding-inline);
 
 
-	font-family: "IBM Plex Mono";
-	font-size:.75rem;
-	line-height:1.25;
+	font-family: var(--font-mono);
+	font-size:var(--text-label);
+	line-height:var(--leading-xs);
 	text-align: center;
 	margin-block-end: var(--space-label-bottom);
 
 }
 
 
-.vocab-text2{
+.vocab-name{
 
 	color:white;
-	font-family: "IBM Plex Sans";
-	font-size:1.75rem;
-	line-height:2rem;
-	font-weight:500rem;
+	font-size:var(--text-module);
+	line-height:var(--leadig-1);
+	font-weight:var(--weight-medium);
 	letter-spacing: -0.125;
 
 
 }
 
-.vocab-expanded{
+.vocab-panel{
 	--space-panel-top: calc(var(--base-unit));
-	background-color:#612E15;
+	background-color:var(--color-vocab-panel);
 	padding-block:var(--space-panel-padding-block);
 	padding-inline:(var(--space-pael-paddig-inline));
-	border-radius:1rem;
+	border-radius:var(--radius-panel);
 	margin-block-start:var(--space-panel-top);
 
 }
@@ -477,12 +522,11 @@ article >section > section > p {
 blockquote > p{
 
 
---space-quote-text-bottom: calc(var(--space-heading-bottom) * 1);
-font-size: 2.5rem;
-color:#FF0004;
-line-height:2.5rem;
+font-size: var(--text-quoteblock-quote);
+color:var(--color-quote-text);
+line-height:var(--leading-2xl);
 margin-block-end:var(--space-quote-text-bottom);
-font-family: "Eb Garamond";
+font-family: var(--font-garamond);
 
 
 }
@@ -490,11 +534,11 @@ font-family: "Eb Garamond";
 blockquote > cite{
 
 	display:inline-block;
-	font-size:1.25rem;
-	color:#FF0004;
-	background-color:#fbfbfb;
-	font-weight:500;
-	font-family:"Instrument Serif";
+	font-size:var(--text-cite);
+	color:var(--color-cite-text);
+	background-color:var(--color-cite-background);
+	font-weight:var(--weight-medium);
+	font-family:var(--font-instrument);
 	padding-block:var(--space-chip-padding-block);
 	padding-inline:var(--space-chip-padding-inline);
 
@@ -520,9 +564,9 @@ footer > section > ol > li {
 
 }
 
-h6{
+footer > ol > li > h3{
 
-	font-weight:600;
+	font-weight:var(--weight-bold);
 	color:white;
 
 }
@@ -538,10 +582,9 @@ h6{
 }
 
 #response-footer > a{
-	--space-footer-link-bottom: calc(var(--base-unit));
 	display:inline-block;
 	background: transparent;
-	color:white;
+	color:var(--color-footer-text);
 	text-decoration:underline;
 	margin-block-end:var(--space-footer-link-bottom);
 
@@ -550,7 +593,8 @@ h6{
 #response-footer > p{
 
 
-	font-size:.75rem;
+	font-size:var(--text-footnote);
+	line-height:var(--leading-xs);
 
 
 }
@@ -558,11 +602,11 @@ h6{
 button{
 	--space-button-top:calc(var(--base-unit) * 1.5);
 	margin-block-start:var(--space-button-top);
-	background-color:#FF0004;
-	color:white;
+	background-color:var(--color-button-background);
+	color:var(--color-button-text);
 	padding-block:var(--space-button-padding-block);
 	padding-inline:var(--space-button-padding-inline);
-	border-radius:.5rem;
+	border-radius:var(--radius-button);
 
 }
 
