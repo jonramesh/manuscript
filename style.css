@@ -19,7 +19,7 @@
 --color-link-background:#0000FF;
 --color-link-text:white;
 
---color-figure-tag:#FF0004;
+--color-emphasis:#FF0004;
 
 --color-author-background:white;
 --color-author-text:black;
@@ -48,16 +48,17 @@
 --color-button-background:#FF0004;
 --color-button-text:white;
 
---color-accent-background::#0000FF;
---color-accet-text:white;
+--color-accent-background:#0000FF;;
+--color-accent-text:white;
 
 /*font families */
 
 --font-sans-body: "IBM Plex Sans", Arial, sans-serif;
 --font-mono: "IBM Plex Mono", "Courier New",monospace;
---font-gararmond: "EB Garamond", Georgia,serif;
+--font-garamond: "EB Garamond", Georgia,serif;
 --font-instrument: "Instrument Serif", Georgia, Serif;
---font-start: "Pirata One", Times New Roman, Serif;
+--font-start: "Pirata One", "Times New Roman", serif;
+--radius-dropcap: calc(var(--radius-chip) * 0.5);
 
 
 
@@ -65,7 +66,7 @@
 --radius-chip: calc(var(--space-chip-padding-inline) * 1);
 --radius-button: calc(var(--radius-chip) * 1);
 --radius-module: calc(var(--space-module-padding) * 1.25);
---radiu-panel: calc(var(--space-module-padding) * 1);
+--radius-panel: calc(var(--space-module-padding) * 1);
 
 
 /* measure line length */
@@ -120,22 +121,38 @@
 
 --space-module-padding: calc(var(--space-paragraph-bottom) * 0.4);
 --space-panel-padding-block: calc(var(--space-module-padding) * .75);
---space-panel-paddig-inline: calc(var(--space-module-padding) * 1.5);
+--space-panel-padding-inline: calc(var(--space-module-padding) * 1.5);
 
 
 --space-page-inline: calc(var(--space-subsection-bottom) * 1);
 --space-quote-padding-inline: calc(var(--space-article-section-bottom) * 1.5);
 
+/*module */
+
+--space-module-bottom: calc(var(--space-module-padding) * 1);
+--space-label-bottom: calc(var(--space-module-padding) * 0.5);
+--space-panel-top: calc(var(--space-module-padding)* 1);
+--space-source-bottom: calc(var(--space-module-padding) * 1);
+--space-footer-citation-bottom: calc(var(--space-paragraph-bottom)*0.5);
+--space-footer-link-bottom: calc(var(--space-footer-citation-bottom) * 1);
+--space-button-top: calc(var(--space-heading-bottom) * 1);
+
+
+
 
 /* layout columns */
 
 --column-text: 50%;
---colum-side: calc(var(--column-text) * 0.8);
---colum-gap: calc(var(--column-text) * 0.16);
+--column-side: calc(var(--column-text) * 0.8);
+--column-gap: calc(var(--column-text) * 0.16);
 /*type system a 1.25 ratio, which should be close to a 4px grid */
 
 
 --type-grid: calc(var(--base-unit) * 0.25);
+
+/*dropcap size*/
+--size-dropcap: calc(var(--type-grid) * 80);
+
 
 /*sizes */
 
@@ -143,7 +160,7 @@
 --text-s: calc(var(--type-grid) * 4);
 --text-m: calc(var(--type-grid) * 5);
 --text-l: calc(var(--type-grid) * 6);
---text-sxl: calc(var(--type-grid) * 10);
+--text-2xl: calc(var(--type-grid) * 10);
 
 /* types */
 
@@ -151,21 +168,21 @@
 --text-header-subtext: var(--text-s);
 --text-heading-title: var(--text-2xl);
 --text-article-body-lead: var(--text-2xl);
---text-heading-one:var(--text-1);
+--text-heading-one: var(--text-l);
 --text-quoteblock-quote: var(--text-2xl);
---text-module: var(--text-1);
+--text-module: var(--text-l);
 --text-label: var(--text-xs);
 --text-source: var(--text-s);
 --text-description: var(--text-xs);
 --text-cite: var(--text-m);
 --text-footnote:var(--text-xs);
---text-dropcap: calc(var(--text-articlebody-lead * 6.4));
+--text-dropcap: calc(var(--text-article-body-lead) * 6.4);
 
 --leading-xs: calc(var(--type-grid) * 4);
 --leading-s: calc(var(--type-grid) * 6);
 --leading-m: calc(var(--type-grid)* 7);
---leading-l: calc(var(--type-grid) * 11);
---leading-2xl: calc(var(--type-grid) * 11)
+--leading-l: calc(var(--type-grid) * 8);
+--leading-2xl: calc(var(--type-grid) * 11);
 
 
 
@@ -176,11 +193,11 @@
 
 }
 
-/* The body element where all the amin styles are captured.   */
+
 body{
 
-	/* spacing */
-	--space-page-top: calc(var(--space-heading1-bottom) * 3);
+
+
 
 
 
@@ -212,25 +229,22 @@ em{
 }
 
 h2{
-	--space-heading-bottom: calc(var(--space-paragraph-bottom) * .5);
+
 	font-size:var(--text-heading-one);
 	background-color: var(--color-accent-background);
 	display:inline-block;
-	color:var(--color-accet-text);
+	color:var(--color-accent-text);
 	font-weight:var(--weight-medium);
 	padding-block:var(--space-chip-padding-block);
 	padding-inline:var(--space-chip-padding-inline);
 	margin-block-end:var(--space-heading-bottom);
-	line-height:var(--leading-1)
+	line-height:var(--leading-l)
 }
 
 blockquote{
-	--space-quote-top: calc(var(--space-article-sectio-bottom) * 2);
-	--space-quote-bottom: calc(var(--space-quote-top) * 1);
 	text-align:center;
 	padding-inline-start:var(--space-quote-padding-inline);
 	padding-inline-end:var(--space-quote-padding-inline);
-	padding-inline-end:4lh;
 	margin-block-start:var(--space-quote-top);
 	margin-block-end:var(--space-quote-bottom);
 
@@ -242,7 +256,7 @@ blockquote{
 
 header{
 
-	--space-header-bottom: calc(var(--base-unit)* 10);
+
 	margin-block-end:var(--space-header-bottom) ;
 	text-align:end;
 }
@@ -252,12 +266,11 @@ header{
 
 header > h1 {
 
-	--space-heading1-bottom: calc(var(--space-heading-bottom) * 1);
 	font-size: var(--text-heading-title);
 	max-inline-size: var(--measure-title);
-	margin-inline: auto;
+	margin-inline-start: auto;
 	line-height:var(--leading-2xl);
-	font-family: var(--font-gararmond);
+	font-family: var(--font-garamond);
 	margin-block-end:var(--space-heading1-bottom);
 }
 
@@ -265,7 +278,6 @@ header > h1 {
 
 header > time {
 
-	--space-time-bottom: calc(var(--space-author-bottom) * 1);
 	font-size:var(--text-header-subtext);
 	margin-block-end:var(--space-time-bottom);
 	line-height: var(--leading-s);
@@ -273,8 +285,7 @@ header > time {
 
 header > p {
 
-	--space-author-bottom: calc(var(--space-heading1-bottom)/3);
-	margin-block-end:var(--space-author);
+	margin-block-end:var(--space-author-bottom);
 }
 
 header > p > a {
@@ -310,7 +321,7 @@ article > section{
 	margin-block-end:var(--space-intro-bottom);
 	font-size:var(--text-article-body-lead);
 	line-height:var(--leading-2xl);
-	font-family: var(--font-intrument);
+	font-family: var(--font-instrument);
 }
 
 
@@ -322,21 +333,21 @@ article > section{
 	height:var(--size-dropcap);
 	width:var(--size-dropcap);
 	color:var(--color-accent-text);
-	font-size: var(--text-start);
+	font-size: var(--text-dropcap);
 	text-align:center;
-	line-height:var(--size-dropcap);;
+	line-height:var(--size-dropcap);
 	font-family:var(--font-start);
 	border-radius: .25rem;
 	margin-inline-end: var(--space-module-padding);
 }
 
 article > section > section{
-	--space-subsection-bottom: calc(var(--space-paragraph-bottom) * 1.5);
+
 	margin-block-end:var(--space-subsection-bottom);
 }
 
 article >section > section > p {
-	--space-paragraph-bottom: calc(var(--base-unit) * 2.5);
+
 	margin-block-end:var(--space-paragraph-bottom);
 }
 
@@ -346,13 +357,13 @@ article >section > section > p {
 .text-body{
 
 	display:inline-block;
-	max-width:50%;
-	margin-inline-end:8%;
+	max-inline-size: var(--column-text);
+	margin-inline-end:var(--colum-gap);
 }
 
 .sidebar{
 	display:inline-block;
-	width:40%;
+	inline-size:var(--column-side);
 
 }
 
@@ -361,7 +372,7 @@ article >section > section > p {
 /* figure modules */
 
 .figure-module {
-	--space-module-bottom: calc(var(--base-unit));
+
 	background:var(--color-figure-background);
 	border-radius: var(--radius-module);
 	padding-block: var(--space-module-padding);
@@ -391,12 +402,12 @@ article >section > section > p {
 
 
 .figure-label{
-	--space-label-bottom:calc(var(--base-unit) * 0.5);
+
 	display:inline-block;
-	background-color:var(--color-figure-background);
-	padding-block:var(--space-chip-paddig-block);
+	background-color:var(--color-figure-label-background);
+	padding-block:var(--space-chip-padding-block);
 	padding-inline:var(--space-chip-padding-inline);
-	color:var(--color-figure-text);
+	color:var(--color-figure-label-text);
 	font-family: var(--font-mono);
 	font-size:var(--text-label);
 	line-height:var(--leading-xs);
@@ -409,24 +420,23 @@ article >section > section > p {
 
 	color:var(--color-figure-text);
 	font-size:var(--text-module);
-	line-height:var(--leading-1);
+	line-height:var(--leading-l);
 	font-weight:var(--weight-medium);
-	letter-spacing: -0.125;
+
 
 
 }
 
 .figure-panel{
-	--space-panel-top: calc(var(--base-unit));
 	background-color:var(--color-figure-panel);
 	padding-block:var(--space-panel-padding-block);
-	padding-inline:var(--space-panel-paddig-inline);
+	padding-inline:var(--space-panel-padding-inline);
 	border-radius:var(--radius-panel);
 	margin-block-start:var(--space-panel-top);
 }
 
 .panel-source{
-	--space-source-bottom: calc(var(--base-unit));
+
 	color:var(--color-figure-text);
 	margin-block-end: var(--space-source-bottom);
 	font-family: var(--font-mono);
@@ -469,7 +479,7 @@ article >section > section > p {
 
 
 .vocab-module{
-	--space-module-bottom: calc(var(--base-unit) * 1);
+
 	background:var(--color-vocab-background);
 	border-radius: var(--radius-module);
 	padding-block: var(--space-module-padding);
@@ -502,20 +512,20 @@ article >section > section > p {
 
 .vocab-name{
 
-	color:white;
+	color:var(--color-vocab-text);
 	font-size:var(--text-module);
-	line-height:var(--leadig-1);
+	line-height:var(--leadig-l);
 	font-weight:var(--weight-medium);
-	letter-spacing: -0.125;
+
 
 
 }
 
 .vocab-panel{
-	--space-panel-top: calc(var(--base-unit));
+
 	background-color:var(--color-vocab-panel);
 	padding-block:var(--space-panel-padding-block);
-	padding-inline:(var(--space-pael-paddig-inline));
+	padding-inline:(var(--space-panel-paddig-inline));
 	border-radius:var(--radius-panel);
 	margin-block-start:var(--space-panel-top);
 
@@ -561,8 +571,8 @@ blockquote > cite{
 
 /* Footer Bibliography original article */
 
-footer > section > ol > li {
-	--space-footer-citation-bottom: calc(var(--base-unit));
+footer  > ol > li {
+
 	margin-block-end:var(--space-footer-citation-bottom);
 
 
@@ -571,10 +581,10 @@ footer > section > ol > li {
 
 }
 
-footer > ol > li > h3{
+footer li > h3{
 
 	font-weight:var(--weight-bold);
-	color:white;
+	color:var(--color-footer-text);
 
 }
 
@@ -607,7 +617,7 @@ footer > ol > li > h3{
 }
 
 button{
-	--space-button-top:calc(var(--base-unit) * 1.5);
+	
 	margin-block-start:var(--space-button-top);
 	background-color:var(--color-button-background);
 	color:var(--color-button-text);
