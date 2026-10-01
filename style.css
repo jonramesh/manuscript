@@ -436,6 +436,13 @@ article >section > section > p {
 
 
 }
+.panel-source > a{
+	background-color: transparent;
+	padding-block:0;
+	padding-inline:0;
+	text-decoration:underline;
+
+}
 .panel-description{
 
 
