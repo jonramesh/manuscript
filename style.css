@@ -575,11 +575,11 @@ article >section > section > p {
 blockquote > p{
 
 
-font-size: var(--text-quoteblock-quote);
-color:var(--color-quote-text);
-line-height:var(--leading-2xl);
-margin-block-end:var(--space-quote-text-bottom);
-font-family: var(--font-garamond);
+	font-size: var(--text-quoteblock-quote);
+	color:var(--color-quote-text);
+	line-height:var(--leading-2xl);
+	margin-block-end:var(--space-quote-text-bottom);
+	font-family: var(--font-garamond);
 
 
 }
