@@ -2,6 +2,9 @@
 /* The whole system is based on the basline grid I created for me sketch. So initially thats why all the variables are filled         */
 
 --base-unit: 1rem;
+--type-grid: calc(var(--base-unit) * 0.25);
+
+
 
 /*font weight*/
 
@@ -58,22 +61,22 @@
 --font-garamond: "EB Garamond", Georgia,serif;
 --font-instrument: "Instrument Serif", Georgia, Serif;
 --font-start: "Pirata One", "Times New Roman", serif;
---radius-dropcap: calc(var(--radius-chip) * 0.5);
 
 
 
 
---radius-chip: calc(var(--space-chip-padding-inline) * 1);
---radius-button: calc(var(--radius-chip) * 1);
---radius-module: calc(var(--space-module-padding) * 1.25);
---radius-panel: calc(var(--space-module-padding) * 1);
+
+
+
+
+
 
 
 /* measure line length */
 
---measure-body: 55ch;
---measure-title: 20ch;
---measure-quote: var(--measure-body);
+
+--measure-title: 40ch;
+
 
 
 
@@ -87,47 +90,67 @@
 
 /*Margin */
 
+/*start*/
 --space-paragraph-bottom: calc(var(--base-unit) * 2.5);
---space-heading-bottom: calc(var(--space-paragraph-bottom) * 0.5);
---space-quote-text-bottom: calc(var(--space-heading-bottom) * 1);
+
+
+
+
+/*branch of the tree paragraph-bottom-> */
+--space-heading-bottom: calc(var(--space-paragraph-bottom) * 4);
+--space-quote-text-bottom: calc(var(--space-paragraph-bottom) * .5);
 --space-subsection-bottom: calc(var(--space-paragraph-bottom) * 1.5);
 --space-article-section-bottom: calc(var(--space-paragraph-bottom) * 2);
---space-intro-bottom: calc(var(--space-article-section-bottom)* 1);
---space-quote-top: calc(var(--space-article-section-bottom) * 2);
---space-quote-bottom: calc(var(--space-quote-top) * 1);
---space-article-bottom: calc(var(--space-quote-top) * 1.5);
+--space-heading1-bottom: calc(var(--space-paragraph-bottom) * .5);
+--space-page-top: calc(var(--space-paragraph-bottom) * 2);
 
-/* Header */
-
---space-heading1-bottom: calc(var(--space-heading-bottom) * 1);
---space-author-bottom: calc(var(--space-heading1-bottom) * 0.4);
---space-page-top: calc(var(--space-heading1-bottom) * 3);
---space-header-bottom: calc(var(--space-quote-top) * 1);
-
-
-
-
-/* padding */
+/* padding  they also start from the paragraph bottom*/
 
 --space-chip-padding-block: calc(var(--space-paragraph-bottom) * 0.1);
---space-chip-padding-inline: calc(var(--space-chip-padding-block) * 2);
-
-
-/*Button  */
-
---space-button-padding-block: calc(var(--space-chip-padding-block) * 2);
---space-button-padding-inline: calc(var(--space-chip-padding-inline) * 2);
-
-
 --space-module-padding: calc(var(--space-paragraph-bottom) * 0.4);
+
+
+/* padding -> paragraph -> module-padding-*/
 --space-panel-padding-block: calc(var(--space-module-padding) * .75);
 --space-panel-padding-inline: calc(var(--space-module-padding) * 1.5);
 
 
---space-page-inline: calc(var(--space-subsection-bottom) * 1);
---space-quote-padding-inline: calc(var(--space-article-section-bottom) * 1.5);
 
-/*module */
+
+/*padding pragraph -> chip-block */
+--space-chip-padding-inline: calc(var(--space-chip-padding-block) * 2);
+--space-button-padding-block: calc(var(--space-chip-padding-block) * 2);
+
+/*paragraph-> chip block -> chip inline -*/
+--space-button-padding-inline: calc(var(--space-chip-padding-inline) * 2);
+--radius-chip: calc(var(--space-chip-padding-inline) * 1);
+
+/*paragraph -> chip block- chip inline -> radius-chip */
+--radius-dropcap: calc(var(--radius-chip) * 0.5);
+--radius-button: calc(var(--radius-chip) * 1);
+--radius-module: calc(var(--space-module-padding) * 1.25);
+--radius-panel: calc(var(--space-module-padding) * 1);
+
+
+
+
+/* paragraph -> space-subsectio-bottom */
+--space-page-inline: calc(var(--space-subsection-bottom) * 1);
+
+/*branch of paragraph-bottom -> headig1-bottom*/
+--space-author-bottom: calc(var(--space-heading1-bottom) * 0.4);
+
+
+/*paragraph -> space-article-aection-bottom */
+--space-intro-bottom: calc(var(--space-article-section-bottom)* 1);
+--space-quote-top: calc(var(--space-article-section-bottom) * 2);
+
+/*pargraph -> space-article-bottom-section->spacequotetop -> */
+--space-quote-bottom: calc(var(--space-quote-top) * 1);
+
+--space-article-bottom: calc(var(--space-quote-top) * 1.5);
+
+--space-header-bottom: calc(var(--space-quote-top) * 1);
 
 --space-module-bottom: calc(var(--space-module-padding) * 1);
 --space-label-bottom: calc(var(--space-module-padding) * 0.5);
@@ -135,7 +158,16 @@
 --space-source-bottom: calc(var(--space-module-padding) * 1);
 --space-footer-citation-bottom: calc(var(--space-paragraph-bottom)*0.5);
 --space-footer-link-bottom: calc(var(--space-footer-citation-bottom) * 1);
---space-button-top: calc(var(--space-heading-bottom) * 1);
+--space-button-top: calc(var(--space-paragraph-bottom) * .5);
+--space-quote-padding-inline: calc(var(--space-article-section-bottom) * 1.5);
+
+
+
+
+
+/*module */
+
+
 
 
 
@@ -143,19 +175,17 @@
 /* layout columns */
 
 --column-text: 50%;
---column-side: calc(var(--column-text) * 0.8);
---column-gap: calc(var(--column-text) * 0.16);
+--column-side: calc(var(--column-text) * 0.8);/*the column text becomes 40% */
+--column-gap: calc(var(--column-text) * 0.16);/*column text becomes 8 percent*/
 /*type system a 1.25 ratio, which should be close to a 4px grid */
-
-
---type-grid: calc(var(--base-unit) * 0.25);
 
 /*dropcap size*/
 --size-dropcap: calc(var(--type-grid) * 80);
 
 
-/*sizes */
 
+/*sizes */
+/* to match the spacing of my old text I wanted evrything to be by 4 so I took the body paragraph and created a 1.25 ratio for it which as it multiplied further it got as close as I could to the original sizing of my code. I than just average it to the nearest multiple 4 so get them all evened out. */
 --text-xs: calc(var(--type-grid) * 3);
 --text-s: calc(var(--type-grid) * 4);
 --text-m: calc(var(--type-grid) * 5);
@@ -176,7 +206,7 @@
 --text-description: var(--text-xs);
 --text-cite: var(--text-m);
 --text-footnote:var(--text-xs);
---text-dropcap: calc(var(--text-article-body-lead) * 6.4);
+--text-dropcap: calc(var(--text-article-body-lead) * 6);
 
 --leading-xs: calc(var(--type-grid) * 4);
 --leading-s: calc(var(--type-grid) * 6);
@@ -252,6 +282,11 @@ blockquote{
 
 
 
+}
+
+blockquote > cite{
+
+margin-block-end:var(--space-quote-text-bottom)
 }
 
 header{
