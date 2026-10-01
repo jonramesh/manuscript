@@ -72,7 +72,7 @@
 body{
 
 	/* spacing */
-	--space-page-top: calc(var(--base-unit) * 3);
+	--space-page-top: calc(var(--space-heading1-bottom) * 3);
 
 
 
@@ -105,7 +105,7 @@ em{
 }
 
 h2{
-	--space-heading-bottom: calc(var(--base-unit) * 1.5);
+	--space-heading-bottom: calc(var(--space-paragraph-bottom) * .5);
 	font-size:var(--text-heading-one);
 	background-color: var(--color-main);
 	display:inline-block;
@@ -118,8 +118,8 @@ h2{
 }
 
 blockquote{
-	--space-quote-top: calc(var(--base-unit) * 10);
-	--space-quote-bottom: calc(var(--base-unit) * 10);
+	--space-quote-top: calc(var(--space-article-sectio-bottom) * 2);
+	--space-quote-bottom: calc(var(--space-quote-top) * 1);
 	text-align:center;
 	padding-inline-start:4lh;
 	padding-inline-end:4lh;
@@ -144,7 +144,7 @@ header{
 
 header > h1 {
 
-	--space-heading1-bottom: calc(var(--base-unit) * 1.5);
+	--space-heading1-bottom: calc(var(--space-heading-bottom) * 1);
 	font-size: var(--text-heading-title);
 	padding-inline-start:60rem;
 	line-height:2.75rem;
@@ -156,15 +156,15 @@ header > h1 {
 
 header > time {
 
-	--space-time-bottom: calc(var(--base-unit) * .5);
+	--space-time-bottom: calc(var(--space-author-bottom) * 1);
 	font-size:var(--text-header-subtext);
 	margin-block-end:var(--space-time-bottom);
 }
 
 header > p {
 
-	--space-author-bottom: calc(var(--base-unit) * .5);
-	margin-block-end:var(--space-author-bottom);
+	--space-author-bottom: calc(var(--space-heading1-bottom)/3);
+	margin-block-end:var(--space-author);
 }
 
 header > p > a {
@@ -186,7 +186,7 @@ header > p > a {
 /*article body end */
 
 article{
-	--space-article-bottom: calc(var(--base-unit)* 8);
+	--space-article-bottom: calc(var(--space-quote-top) * 1.5);
 	margin-block-end:var(--space-article-bottom);
 }
 
@@ -194,12 +194,12 @@ article{
 
 
 article > section{
-	--space-article-section-bottom: calc(var(--base-unit) * 4);
+	--space-article-section-bottom: calc(var(--space-paragraph-bottom) * 2);
 	margin-block-end: var(--space-article-section-bottom);
 }
 
 .intro-paragraph{
-	--space-intro-bottom: calc(var(--base-unit)*4);
+	--space-intro-bottom: calc(var(--space-article-section-bottom)*1);
 	margin-block-end:var(--space-intro-bottom);
 	font-size:var(--text--article-body--lead);
 	line-height:2.5rem;
@@ -224,7 +224,7 @@ article > section{
 }
 
 article > section > section{
-	--space-subsection-bottom: calc(var(--base-unit) * 3);
+	--space-subsection-bottom: calc(var(--space-paragraph-bottom) * 1.5);
 	margin-block-end:var(--space-subsection-bottom);
 }
 
@@ -407,7 +407,7 @@ article >section > section > p {
 blockquote > p{
 
 
---space-quote-text-bottom: calc(var(--base-unit) * 4);
+--space-quote-text-bottom: calc(var(--space-heading-bottom) * 1);
 font-size: 2.5rem;
 color:#FF0004;
 line-height:2.5rem;
