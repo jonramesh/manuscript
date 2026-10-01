@@ -64,6 +64,26 @@
 /* line height calculations */
 /* padding and margin*/
 
+--space-chip-padding-block: calc(var(--space-paragraph-bottom) * 0.1);
+--space-chip-padding-inline: calc(var(--space-chip-padding-block)0.2);
+
+
+/*Button  */
+
+--space-button-padding-block: calc(var(--space-chip-padding-block) * 2);
+--space-button-padding-inline: calc(var(--space-chip-padding-inline) * 2);
+
+
+--space-module-padding: calc(var(--space-paragraph-bottom) * 0.4);
+--space-pael-padding-block: calc(var(--space-module-padding) * .75);
+--space-pael-paddig-inline: calc(var(--space-module-padding) * 1.5);
+
+
+--space-page-iline: calc(var(--space-subsection-bottom) * 1);
+--space-quote-paddig-inline: calc(var(--space-article-section-bottom) * 1.5);
+
+
+
 
 
 }
@@ -79,7 +99,7 @@ body{
 	background-color: var(--color-page-background);
 	font-size:var(--text-article-body-paragraph);
 	line-height:1.75rem;
-	padding-inline:2lh;
+	padding-inline:var(--space-page-inline);
 	padding-block-start:var(--space-page-top);
 	font-family:"IBM plex sans";
 	color:rgb(204, 203, 203);
@@ -88,13 +108,12 @@ body{
 /* global styles */
 
 a{
-	--space-link-padding-block: calc(var(--base-unit) * .25);
-	--space-link-padding-inline:calc(var(--base-unit) * .5 )
+
 	background-color:#0000FF;
 	font-family:"IBM plex mono";
 	color:#f3f607;
-	padding-block:var(--space-link-padding-block);
-	padding-inline:var(--space-link-padding-inline);
+	padding-block:var(--space-chip-padding-block);
+	padding-inline:var(--space-chip-padding-inline);
 	border-radius:.5rem;
 }
 
@@ -112,8 +131,8 @@ h2{
 	color:white;
 	font-family: "IBM Plex sans";
 	font-weight:500;
-	padding-block:.2lh;
-	padding-inline:.3lh;
+	padding-block:var(--space-chip-padding-block);
+	padding-inline:var(--space-chip-padding-inline);
 	margin-block-end:var(--space-heading-bottom);
 }
 
@@ -121,7 +140,8 @@ blockquote{
 	--space-quote-top: calc(var(--space-article-sectio-bottom) * 2);
 	--space-quote-bottom: calc(var(--space-quote-top) * 1);
 	text-align:center;
-	padding-inline-start:4lh;
+	padding-inline-start:var(--space-quote-padding-iline);
+	padding-inline-end:var(--space-quote-paddig-inline);
 	padding-inline-end:4lh;
 	margin-block-start:var(--space-quote-top);
 	margin-block-end:var(--space-quote-bottom);
@@ -257,8 +277,8 @@ article >section > section > p {
 	--space-module-bottom: calc(var(--base-unit));
 	background:#0000FF;
 	border-radius: 1.25rem;
-	padding-block: 1rem;
-	padding-inline:1rem;
+	padding-block: var(--space-module-padding);
+	padding-inline:var(--space-module-padding);
 	width: 100%;
 	margin-block-end:var(--space-module-bottom);
 
@@ -273,8 +293,8 @@ article >section > section > p {
 	--space-label-bottom:calc(var(--base-unit) * 0.5);
 	display:inline-block;
 	background:white;
-	padding-block:.25;
-	padding-inline:.25;
+	padding-block:var(--space-chip-paddig-block);
+	padding-inline:var(--space-chip-padding-inline);
 	color:#0000FF;
 	font-family: "IBM Plex Mono";
 	font-size:.75rem;
@@ -299,8 +319,8 @@ article >section > section > p {
 .expanded{
 	--space-panel-top: calc(var(--base-unit));
 	background-color:#0b0b9e;
-	padding-block:0.75rem;
-	padding-inline:1.5rem;
+	padding-block:var(--space-pael-padding-block);
+	padding-inline:var(--space-pael-paddig-inline);
 	border-radius:1rem;
 	margin-block-start:var(--space-panel-top);
 }
@@ -333,13 +353,12 @@ article >section > section > p {
 /* vocab modules */
 
 .vocab{
-	--space-vocab-padding-block: calc(var(--base-unit) * .25);
-	--space-vocab-padding-inline: calc(var(--base-unit) * .5);
+
 	background-color:#FF0004;
 	color:white;
 	border-radius:.5rem;
-	padding-block:.1lh;
-	padding-inline:.3lh;
+	padding-block:var(--space-chip-padding-block);
+	padding-inline:var(--space-chip-padding-inline);
 }
 
 
@@ -347,8 +366,8 @@ article >section > section > p {
 	--space-module-bottom: calc(var(--base-unit) * 1);
 	background:#FF0004;
 	border-radius: 1.25rem;
-	padding-block: 1rem;
-	padding-inline:1rem;
+	padding-block: var(--space-module-padding);
+	padding-inline:var(--space-module-padding);
 	width: 100%;
 	margin-block-end:var(--space-module-bottom);
 
@@ -364,8 +383,8 @@ article >section > section > p {
 	display:inline-block;
 	background:white;
 	color:#FF0004;
-	padding-block:.25;
-	padding-inline:.25;
+	padding-block:var(--space-chip-padding-block);
+	padding-inline:var(--space-chip-padding-inline);
 
 
 	font-family: "IBM Plex Mono";
@@ -392,8 +411,8 @@ article >section > section > p {
 .vocab-expanded{
 	--space-panel-top: calc(var(--base-unit));
 	background-color:#612E15;
-	padding-block:0.75rem;
-	padding-inline:1.5rem;
+	padding-block:var(--space-panel-padding-block);
+	padding-inline:(var(--space-pael-paddig-inline));
 	border-radius:1rem;
 	margin-block-start:var(--space-panel-top);
 
@@ -425,8 +444,8 @@ blockquote > cite{
 	background-color:#fbfbfb;
 	font-weight:500;
 	font-family:"Instrument Serif";
-	padding-block:.5rem;
-	padding-inline:.5rem;
+	padding-block:var(--space-chip-padding-block);
+	padding-inline:var(--space-chip-padding-inline);
 
 
 
@@ -490,8 +509,8 @@ button{
 	margin-block-start:var(--space-button-top);
 	background-color:#FF0004;
 	color:white;
-	padding-block:.5lh;
-	padding-inline:.5lh;
+	padding-block:var(--space-button-padding-block);
+	padding-inline:var(--space-button-padding-inline);
 	border-radius:.5rem;
 
 }
