@@ -128,7 +128,7 @@
 /*paragraph -> chip block- chip inline -> radius-chip */
 --radius-dropcap: calc(var(--radius-chip) * 0.5);
 --radius-button: calc(var(--radius-chip) * 1);
---radius-module: calc(var(--space-module-padding) * 1.25);
+
 --radius-panel: calc(var(--space-module-padding) * 1);
 
 
@@ -152,6 +152,8 @@
 
 --space-header-bottom: calc(var(--space-quote-top) * 1);
 
+
+/* paragraph bottom -> Space module padding */
 --space-module-bottom: calc(var(--space-module-padding) * 1);
 --space-label-bottom: calc(var(--space-module-padding) * 0.5);
 --space-panel-top: calc(var(--space-module-padding)* 1);
@@ -160,8 +162,8 @@
 --space-footer-link-bottom: calc(var(--space-footer-citation-bottom) * 1);
 --space-button-top: calc(var(--space-paragraph-bottom) * .5);
 --space-quote-padding-inline: calc(var(--space-article-section-bottom) * 1.5);
-
-
+--radius-module: calc(var(--space-module-padding) * 1.25);
+--radius-panel: calc(var(--space-module-padding) * 1);
 
 
 
@@ -371,7 +373,7 @@ article > section{
 	text-align:center;
 	line-height:var(--size-dropcap);
 	font-family:var(--font-start);
-	border-radius: .25rem;
+	border-radius: var(--radius-dropcap);
 	margin-inline-end: var(--space-module-padding);
 }
 
