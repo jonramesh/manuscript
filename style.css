@@ -279,7 +279,6 @@ header > h1 {
 header > time {
 
 	font-size:var(--text-header-subtext);
-	margin-block-end:var(--space-time-bottom);
 	line-height: var(--leading-s);
 }
 
@@ -358,7 +357,7 @@ article >section > section > p {
 
 	display:inline-block;
 	max-inline-size: var(--column-text);
-	margin-inline-end:var(--colum-gap);
+	margin-inline-end:var(--column-gap);
 }
 
 .sidebar{
@@ -514,7 +513,7 @@ article >section > section > p {
 
 	color:var(--color-vocab-text);
 	font-size:var(--text-module);
-	line-height:var(--leadig-l);
+	line-height:var(--leading-l);
 	font-weight:var(--weight-medium);
 
 
@@ -525,7 +524,7 @@ article >section > section > p {
 
 	background-color:var(--color-vocab-panel);
 	padding-block:var(--space-panel-padding-block);
-	padding-inline:(var(--space-panel-paddig-inline));
+	padding-inline:(var(--space-panel-padding-inline));
 	border-radius:var(--radius-panel);
 	margin-block-start:var(--space-panel-top);
 
@@ -571,7 +570,7 @@ blockquote > cite{
 
 /* Footer Bibliography original article */
 
-footer  > ol > li {
+footer  > li {
 
 	margin-block-end:var(--space-footer-citation-bottom);
 
@@ -617,7 +616,7 @@ footer li > h3{
 }
 
 button{
-	
+
 	margin-block-start:var(--space-button-top);
 	background-color:var(--color-button-background);
 	color:var(--color-button-text);
