@@ -11,42 +11,68 @@
 
 /* color system  */
 
---color-page-background:#203952;
-
---color-text-body: rgb(204, 203, 203);
-
---color-text-heading: #EEEEEE;
 
 
+--color-footer-text:#203952;
+--color-text-body:#CCCBCB;
 
---color-main:#0000FF;
+--color-link-background:#0000FF;
+--color-link-text:white;
 
+--color-figure-tag:#FF0004;
 
---color-highlight-background-vocab:#FF0004;
-
---color-highlight-backgroung-person:#0000FF;
-
---color-highlight-text-vocab:white;
-
---color-highlight-text-author:white;
-
---color-highlight-text-person:white;
-
---color-vocab-card-background:#FF0004;
-
---color-person-card-background:#0000FF;
-
---color-person-card-text:white;
-
---color-vocab-card-text:white;
+--color-author-background:white;
+--color-author-text:black;
 
 
+--color-figure-background:#0000FF ;
+--color-figure-text:white;
+--color-figure-label-background:white;
+--color-figure-label-text:#0000FF ;
+--color-figure-panel: #0b0b9e;
+--color-panel-description:#c9bab5;
 
---color-quoteblock-cite-background:white;
 
---color-quoteblock-cite-text:#FF0004;
+--color-vocab-background:#FF0004;
+--color-vocab-text:white;
+--color-vocab-label-background:white;
+--color-vocab-label-text:#FF0004;
+--color-vocab-panel:#612E15;
 
---color-quopteblock-quote-text:#FF0004;;
+--color-quote-text:#FF0004;
+--color-cite-text:#FF0004;
+--color-cite-background:#fbfbfb;
+
+--color-footer-text:white;
+
+--color-button-background:#FF0004;
+--color-button-text:white;
+
+/*font families */
+
+--font-sans-body: "IBM Plex Sans", Arial, sans-serif;
+--font-mono: "IBM Plex Mono", "Courier New",monospace;
+--font-grarmond: "EB Garamond", Georgia,serif;
+--font-instrument: "Instrument Serif", Georgia, Serif;
+--font-start: "Pirate One", Times new Rome, Serif;
+
+
+
+
+--radius-chip: calc(var(--space-chip-padding-iline) * 1);
+--radius-button: calc(var(--radius-chip) * 1);
+--radius-module: calc(var(--space-module-paddig) * 1.25);
+--radiu-pae: calc(var(--space-module-paddig) * 1);
+
+
+/* measure line length */
+
+--measure-body: 55ch;
+--measure-title: 20ch;
+--measure-quote: 55ch;
+
+
+
 
 /*type size system*/
 
@@ -62,7 +88,32 @@
 
 
 /* line height calculations */
-/* padding and margin*/
+
+
+/*Margin */
+
+--space-paragraph-bottom: calc(var(--base-unit) * 2.5);
+--space-headig-bottom: calc(var(--space-paragraph-bottom) * 0.5);
+--space-quote-text-bottom: calc(var(--space-heading-bottom) * 1);
+--space-subsection-bottom: calc(var(--space-paragraph-bottom) * 1.5);
+--space-article-section-bottom: calc(var(--space-paragraph-bottom) * 2);
+--space-intro-bottom: calc(var(--space-article-section-bottom)* 1);
+--space-quote-top: calc(var(--space-article-section-bottom) * 1);
+--space-quote-bottom: calc(var(--space-quote-top) * 1);
+--space-article-bottom: calc(var(--space-quote-top) * 1.5);
+
+/* Header */
+
+--space-heading1-bottom: calc(var(--space-heading-bottom) * 1);
+--space-author-bottom: calc(var(--space-heading1-bottom) * 0.4);
+--space-time-bottom: calc(var(--space-author-bottom) * 1);
+--space-page-top: calc(var(--space-heading1-bottom) * 3);
+--space-header-bottom: calc(var(--space-quote-top) * 1);
+
+
+
+
+/* padding */
 
 --space-chip-padding-block: calc(var(--space-paragraph-bottom) * 0.1);
 --space-chip-padding-inline: calc(var(--space-chip-padding-block)0.2);
